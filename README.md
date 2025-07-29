@@ -13,6 +13,8 @@ Then install the node packages using
 npm install
 ``` 
 
+Beware that `postinstall` command from `npm install` will fail on Windows due to missing `cp` command. Just copy all `*.wasm` files from `glTF-Sample-Renderer/dist/libs/*.wasm` to `glTF-Sample-Renderer/dist/` folder.
+
 and run the development server using 
 ```bash
 npm run dev
