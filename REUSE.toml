@@ -1,0 +1,30 @@
+version = 1
+SPDX-PackageName = "glTF-Assets"
+SPDX-PackageSupplier = "https://github.com/KhronosGroup/glTF-Assets"
+SPDX-PackageDownloadLocation = "https://github.com/KhronosGroup/glTF-Assets"
+
+[[annotations]]
+path = ["src/**", ".gitignore", "tsconfig.json", ".github/**", "eslint.config.mjs", "next.config.ts", "package-lock.json", "package.json", ".gitmodules", "scripts/**", "README.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2025 Khronos Group"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = "public/images/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2025 Khronos Group"
+SPDX-License-Identifier = "Apache-2.0"
+
+# glTF-Sample-Renderer
+[[annotations]]
+path = ["public/assets/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2025 Khronos Group"
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = ["public/logos/**"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2017-2025 Khronos Group"
+SPDX-License-Identifier = "CC-BY-4.0"
+
