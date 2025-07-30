@@ -12,7 +12,7 @@ const BugReportButton = () => {
       <Tooltip title="Report an issue" slotProps={{tooltip: { sx: {color: `${theme.palette.text.primary}`, }}}}>
         <Fab 
           color="primary" 
-          href="https://github.com/phasmatic3d/saw/issues"
+          href="https://github.com/KhronosGroup/glTF-Assets/issues"
           target='_blank'
           role="link"
           sx={{
