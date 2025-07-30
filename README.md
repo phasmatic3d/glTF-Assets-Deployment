@@ -13,7 +13,7 @@ Then install the node packages using
 npm install
 ``` 
 
-Beware that `postinstall` command, executed by `npm install`, will fail to run on Windows PCs due to the missing `cp` command. Just copy all `*.wasm` files from `glTF-Sample-Renderer/dist/libs/*.wasm` to `glTF-Sample-Renderer/dist/` folder.
+Beware that `postinstall` command, executed by `npm install`, will fail to run on Windows PCs due to the missing `cp` command. Just copy all `*.wasm` files from `glTF-Sample-Renderer/dist/libs/*.wasm` to `glTF-Sample-Renderer/dist/`, `public/libs/` and `public/model/libs/`,  folder.
 
 Finally, run the development server using 
 ```bash
