@@ -49,11 +49,5 @@ If the metadata has changed, execute the command `npm run metadata`. This will r
 ### Build 
 The build process of the website, using GitHub actions, will automatically run and build the website using the new asset list and properties. 
 
-## Security 
 
-As of commit [`be33293c`](https://github.com/KhronosGroup/glTF-Render-Fidelity/commit/be3329cf5b13349ca946c9fc60de98be4cd64e75), this repository has one reported vulnerability that have been automatically detected by GitHub's Dependabot. 
-
-- [CVE-2025-27789](https://nvd.nist.gov/vuln/detail/CVE-2025-27789) concerns runtime complexity and does not affect the Render Fidelity website.
-
-Future work on this repository will completely address these issues by updating the dependencies.
 
