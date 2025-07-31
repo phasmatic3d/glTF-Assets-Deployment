@@ -241,17 +241,24 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   }, [debugOutput])
 
   React.useEffect(() => {
+    // TODO: Debug
+    console.log(`Start src ${src}, ${ktxLoaded}, ${dracoLoaded}`);
     if((ktxLoaded && dracoLoaded) == false)
       return;
     if(canvasRef == null || canvasRef.current == null) { return; }
     const canvas = canvasRef.current;
     const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
 
+    // TODO: Debug
+    console.log(`WebGL started`);
+
     // Is the wireframe extension supported?
     webgl2_wireframe_extensions = webGl2Context.getExtension("WEBGL_polygon_mode") as WEBGL_polygon_mode;
     setHasWireframeExtension(webgl2_wireframe_extensions !== null);
 
     const load = async () => {
+      // TODO: Debug
+      console.log(`Start Load`);
 
       const {GltfView, GltfState} = await import('@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js');
       const view = new GltfView(webGl2Context);
