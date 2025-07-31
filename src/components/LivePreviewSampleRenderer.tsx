@@ -518,8 +518,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   
     return (
       <Box ref={canvasContainerRef}>
-        <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="beforeInteractive" onLoad={() => { console.log("LOADED Draco"); setDracoLoaded(true);}} onReady={() => { console.log("READY Draco");}} />
-        <Script src={`${basePath}/libs/libktx.js`} strategy="beforeInteractive" onLoad={() => { console.log("LOADED KTX"); setKTXLoaded(true); }} onReady={() => { console.log("READY KTX");}}/>
+        <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="afterInteractive" onLoad={() => { console.log("LOADED Draco"); setDracoLoaded(true);}} onReady={() => { console.log("READY Draco");}} />
+        <Script src={`${basePath}/libs/libktx.js`} strategy="afterInteractive" onLoad={() => { console.log("LOADED KTX"); setKTXLoaded(true); }} onReady={() => { console.log("READY KTX");}}/>
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '50vh'}}>
           <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{touchAction: 'none', overscrollBehavior: 'contain', width: '100%'}}/>
           <img ref={imgRef} src={imgSrc} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10, objectFit: 'contain', width:"inherit", height:'inherit'}} alt="Asset Preview"/>
