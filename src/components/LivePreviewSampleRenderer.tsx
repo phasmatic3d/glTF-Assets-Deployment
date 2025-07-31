@@ -475,8 +475,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     if(canvasRef.current)
     {
       canvasRef.current.addEventListener('wheel', handleMouseWheel, { passive: false });
-      canvasRef.current.addEventListener('touchstart', handleTouchStart);
-      canvasRef.current.addEventListener('touchmove', handleTouchMove);
+      canvasRef.current.addEventListener('touchstart', handleTouchStart, { passive: true });
+      canvasRef.current.addEventListener('touchmove', handleTouchMove, { passive: true });
       canvasRef.current.addEventListener('touchend', handleTouchEnd);
     }
 
