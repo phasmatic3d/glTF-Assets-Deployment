@@ -17,6 +17,7 @@ async function* getFiles(dir) {
   }
 }
 
+const RenderFidelityMap = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Render-Fidelity/refs/heads/main/src/data/model-index.Fidelity.json").then(res => res.json()).catch(e => {return {}});
 //const ModelList = await fetch("https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/model-index.json").then(res => res.json()).catch(e => {return []});
 const ModelList = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/Models/model-index.json`, 'utf-8'));
 const CameraProperties = JSON.parse(await fs.promises.readFile(`./src/data/camera-props.SampleAssets.json`, 'utf-8'));
@@ -217,6 +218,7 @@ await (async () => {
       {
         OutputModelMap[name].keywords = ModelKeywords[name].keywords;
       }
+      OutputModelMap[name].isOnRenderFidelity = name in RenderFidelityMap;
     }   
   }
 })();

@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "thumbnail": "node src/scripts/create_thumbnails.mjs",
     "metadata": "node scripts/extract_model_metadata.mjs",
     "generate": "node scripts/render.js",
     "preinstall": "cd ./glTF-Sample-Renderer && npm install && npm run build",

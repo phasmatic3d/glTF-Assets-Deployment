@@ -99,9 +99,9 @@ export default function ComparePage({name, label, image, tags, description, mode
           {downloadUrl && <Box mr={3}>
             <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>View on Sample Viewer</ExternalLink>
           </Box>}
-          <Box mr={3}>
+          {model.isOnRenderFidelity && <Box mr={3}>
             <ExternalLink url={`https://github.khronos.org/glTF-Render-Fidelity/model/${name}`}>View on Render Fidelity</ExternalLink>
-          </Box>
+          </Box>}
           <Box mr={1}>
             <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
           </Box>

@@ -12,8 +12,8 @@
       "KTX"
     ],
     "variants": {
-      "glTF-Binary-KTX-ETC1S-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary-KTX-ETC1S-Draco/ABeautifulGame.glb",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF/ABeautifulGame.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF/ABeautifulGame.gltf",
+      "glTF-Binary-KTX-ETC1S-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ABeautifulGame/glTF-Binary-KTX-ETC1S-Draco/ABeautifulGame.glb"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
@@ -43,7 +43,8 @@
     "authors": [
       "MaterialX Project",
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AlphaBlendModeTest": {
     "name": "AlphaBlendModeTest",
@@ -54,9 +55,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Embedded/AlphaBlendModeTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Embedded/AlphaBlendModeTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf",
@@ -77,7 +78,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnimatedColorsCube": {
     "name": "AnimatedColorsCube",
@@ -115,7 +117,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "AnimatedCube": {
     "name": "AnimatedCube",
@@ -147,7 +150,8 @@
     ],
     "authors": [
       "Norbert Nopper"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnimatedMorphCube": {
     "name": "AnimatedMorphCube",
@@ -161,8 +165,8 @@
     ],
     "variants": {
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF/AnimatedMorphCube.gltf",
-      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Quantized/AnimatedMorphCube.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Binary/AnimatedMorphCube.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Binary/AnimatedMorphCube.glb",
+      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Quantized/AnimatedMorphCube.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF-Binary/AnimatedMorphCube.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedMorphCube/glTF/AnimatedMorphCube.gltf",
@@ -183,7 +187,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnimatedTriangle": {
     "name": "AnimatedTriangle",
@@ -195,8 +200,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedTriangle/glTF-Embedded/AnimatedTriangle.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedTriangle/glTF/AnimatedTriangle.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedTriangle/glTF/AnimatedTriangle.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedTriangle/glTF-Embedded/AnimatedTriangle.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnimatedTriangle/glTF/AnimatedTriangle.gltf",
     "image": "/images/AnimatedTriangle.webp",
@@ -216,7 +221,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnimationPointerUVs": {
     "name": "AnimationPointerUVs",
@@ -276,7 +282,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "AnisotropyBarnLamp": {
     "name": "AnisotropyBarnLamp",
@@ -294,8 +301,8 @@
     ],
     "variants": {
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF/AnisotropyBarnLamp.gltf",
-      "glTF-KTX-BasisU": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-KTX-BasisU/AnisotropyBarnLamp.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-Binary/AnisotropyBarnLamp.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-Binary/AnisotropyBarnLamp.glb",
+      "glTF-KTX-BasisU": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AnisotropyBarnLamp/glTF-KTX-BasisU/AnisotropyBarnLamp.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_anisotropy",
@@ -323,7 +330,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnisotropyDiscTest": {
     "name": "AnisotropyDiscTest",
@@ -360,7 +368,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnisotropyRotationTest": {
     "name": "AnisotropyRotationTest",
@@ -397,7 +406,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AnisotropyStrengthTest": {
     "name": "AnisotropyStrengthTest",
@@ -434,7 +444,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AntiqueCamera": {
     "name": "AntiqueCamera",
@@ -467,7 +478,8 @@
     ],
     "authors": [
       "Maximillan Kamps"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "AttenuationTest": {
     "name": "AttenuationTest",
@@ -506,7 +518,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Avocado": {
     "name": "Avocado",
@@ -518,10 +531,10 @@
       "Meshopt"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Draco/Avocado.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF/Avocado.gltf",
-      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Quantized/Avocado.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Binary/Avocado.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Binary/Avocado.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Draco/Avocado.gltf",
+      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Quantized/Avocado.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF-Binary/Avocado.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Avocado/glTF/Avocado.gltf",
@@ -542,7 +555,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BarramundiFish": {
     "name": "BarramundiFish",
@@ -553,9 +567,9 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Draco/BarramundiFish.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF/BarramundiFish.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Binary/BarramundiFish.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Binary/BarramundiFish.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Draco/BarramundiFish.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF-Binary/BarramundiFish.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BarramundiFish/glTF/BarramundiFish.gltf",
@@ -576,7 +590,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BoomBox": {
     "name": "BoomBox",
@@ -587,9 +602,9 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Draco/BoomBox.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF/BoomBox.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Binary/BoomBox.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Binary/BoomBox.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Draco/BoomBox.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF-Binary/BoomBox.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoomBox/glTF/BoomBox.gltf",
@@ -610,7 +625,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BoomBoxwithAxes": {
     "name": "BoomBoxwithAxes",
@@ -641,7 +657,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Box": {
     "name": "Box",
@@ -652,10 +669,10 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Draco/Box.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Embedded/Box.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF/Box.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Binary/Box.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Binary/Box.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Draco/Box.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Embedded/Box.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF-Binary/Box.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Box/glTF/Box.gltf",
@@ -676,7 +693,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BoxWithSpaces": {
     "name": "BoxWithSpaces",
@@ -707,7 +725,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "BoxAnimated": {
     "name": "BoxAnimated",
@@ -719,9 +738,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Embedded/BoxAnimated.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF/BoxAnimated.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Binary/BoxAnimated.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Binary/BoxAnimated.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Embedded/BoxAnimated.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF-Binary/BoxAnimated.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxAnimated/glTF/BoxAnimated.gltf",
@@ -742,7 +761,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Boxwithinterleavedpositionandnormalattributes": {
     "name": "Boxwithinterleavedpositionandnormalattributes",
@@ -753,9 +773,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Embedded/BoxInterleaved.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF/BoxInterleaved.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Binary/BoxInterleaved.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Binary/BoxInterleaved.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Embedded/BoxInterleaved.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF-Binary/BoxInterleaved.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxInterleaved/glTF/BoxInterleaved.gltf",
@@ -776,7 +796,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BoxTextured": {
     "name": "BoxTextured",
@@ -787,9 +808,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Embedded/BoxTextured.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF/BoxTextured.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Binary/BoxTextured.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Binary/BoxTextured.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Embedded/BoxTextured.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF-Binary/BoxTextured.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTextured/glTF/BoxTextured.gltf",
@@ -810,7 +831,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BoxTexturednot2%5EN": {
     "name": "BoxTexturednot2^N",
@@ -821,9 +843,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Embedded/BoxTexturedNonPowerOfTwo.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF/BoxTexturedNonPowerOfTwo.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Binary/BoxTexturedNonPowerOfTwo.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Binary/BoxTexturedNonPowerOfTwo.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Embedded/BoxTexturedNonPowerOfTwo.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF-Binary/BoxTexturedNonPowerOfTwo.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxTexturedNonPowerOfTwo/glTF/BoxTexturedNonPowerOfTwo.gltf",
@@ -844,7 +866,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BoxVertexColors": {
     "name": "BoxVertexColors",
@@ -855,9 +878,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Embedded/BoxVertexColors.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF/BoxVertexColors.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Binary/BoxVertexColors.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Binary/BoxVertexColors.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Embedded/BoxVertexColors.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF-Binary/BoxVertexColors.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BoxVertexColors/glTF/BoxVertexColors.gltf",
@@ -878,7 +901,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "BrainStem": {
     "name": "BrainStem",
@@ -890,11 +914,11 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Draco/BrainStem.gltf",
-      "glTF-Meshopt": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Meshopt/BrainStem.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Embedded/BrainStem.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF/BrainStem.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Binary/BrainStem.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Binary/BrainStem.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Draco/BrainStem.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Embedded/BrainStem.gltf",
+      "glTF-Meshopt": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Meshopt/BrainStem.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF-Binary/BrainStem.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/BrainStem/glTF/BrainStem.gltf",
@@ -907,7 +931,8 @@
     },
     "keywords": "[robot, machine, artificial intelligence, futuristic, technology, innovation, design, engineering, mechanical, digital, computer-generated, 3D model, animation, simulation, virtual reality, augmented reality, robotics, automation, cybernetics]",
     "license": [],
-    "authors": []
+    "authors": [],
+    "isOnRenderFidelity": true
   },
   "Cameras": {
     "name": "Cameras",
@@ -918,8 +943,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cameras/glTF-Embedded/Cameras.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cameras/glTF/Cameras.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cameras/glTF/Cameras.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cameras/glTF-Embedded/Cameras.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Cameras/glTF/Cameras.gltf",
     "image": "/images/Cameras.webp",
@@ -939,7 +964,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CarbonFibreBall": {
     "name": "CarbonFibreBall",
@@ -975,7 +1001,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CarConcept": {
     "name": "CarConcept",
@@ -994,10 +1021,10 @@
       "KTX"
     ],
     "variants": {
-      "glTF-KTX-BasisU-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-KTX-BasisU-Draco/CarConcept.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF/CarConcept.gltf",
-      "glTF-WEBP": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-WEBP/CarConcept.gltf",
-      "glTF-JPG": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-JPG/CarConcept.gltf"
+      "glTF-JPG": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-JPG/CarConcept.gltf",
+      "glTF-KTX-BasisU-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-KTX-BasisU-Draco/CarConcept.gltf",
+      "glTF-WEBP": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CarConcept/glTF-WEBP/CarConcept.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_clearcoat",
@@ -1025,7 +1052,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CesiumMan": {
     "name": "CesiumMan",
@@ -1037,10 +1065,10 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Draco/CesiumMan.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Embedded/CesiumMan.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF/CesiumMan.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Draco/CesiumMan.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Embedded/CesiumMan.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF-Binary/CesiumMan.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMan/glTF/CesiumMan.gltf",
@@ -1061,7 +1089,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "CesiumMilkTruck": {
     "name": "CesiumMilkTruck",
@@ -1073,10 +1102,10 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Embedded/CesiumMilkTruck.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Draco/CesiumMilkTruck.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Embedded/CesiumMilkTruck.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF-Binary/CesiumMilkTruck.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/CesiumMilkTruck/glTF/CesiumMilkTruck.gltf",
@@ -1097,7 +1126,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "ChairDamaskPurplegold": {
     "name": "ChairDamaskPurplegold",
@@ -1137,7 +1167,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "ChronographWatch": {
     "name": "ChronographWatch",
@@ -1154,9 +1185,9 @@
     ],
     "variants": {
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF/ChronographWatch.gltf",
-      "glTF-WEBP": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-WEBP/ChronographWatch.gltf",
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-Binary/ChronographWatch.glb",
       "glTF-KTX-BasisU": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-KTX-BasisU/ChronographWatch.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-Binary/ChronographWatch.glb"
+      "glTF-WEBP": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/ChronographWatch/glTF-WEBP/ChronographWatch.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
@@ -1182,7 +1213,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "ClearCoatCarPaint": {
     "name": "ClearCoatCarPaint",
@@ -1221,7 +1253,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "KHR_materials_clearcoatTest": {
     "name": "KHR_materials_clearcoatTest",
@@ -1258,7 +1291,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "ClearcoatWicker": {
     "name": "ClearcoatWicker",
@@ -1295,7 +1329,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CommercialRefrigerator": {
     "name": "CommercialRefrigerator",
@@ -1341,7 +1376,8 @@
     "authors": [
       "Eric Chadwick",
       "Sean Thomas"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareAlphaCoverage": {
     "name": "CompareAlphaCoverage",
@@ -1374,7 +1410,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareAmbientOcclusion": {
     "name": "CompareAmbientOcclusion",
@@ -1413,7 +1450,8 @@
     "authors": [
       "Polyhaven",
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareAnisotropy": {
     "name": "CompareAnisotropy",
@@ -1452,7 +1490,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareBaseColor": {
     "name": "CompareBaseColor",
@@ -1488,7 +1527,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareClearcoat": {
     "name": "CompareClearcoat",
@@ -1527,7 +1567,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareDispersion": {
     "name": "CompareDispersion",
@@ -1570,7 +1611,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareEmissiveStrength": {
     "name": "CompareEmissiveStrength",
@@ -1607,7 +1649,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareIOR": {
     "name": "CompareIOR",
@@ -1648,7 +1691,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareIridescence": {
     "name": "CompareIridescence",
@@ -1675,7 +1719,7 @@
       "pitch": 0,
       "distance": 0
     },
-    "keywords": "",
+    "keywords": "[glTF, logo, branding, design, graphics, visual identity, 3D modeling, computer graphics, game development, virtual reality, augmented reality, mixed reality, interactive experiences, digital art, creative technology, innovation, design thinking, problem-solving, critical thinking, collaboration, communication].",
     "license": [
       {
         "license": "CC0",
@@ -1685,7 +1729,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareMetallic": {
     "name": "CompareMetallic",
@@ -1718,7 +1763,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareNormal": {
     "name": "CompareNormal",
@@ -1751,7 +1797,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareRoughness": {
     "name": "CompareRoughness",
@@ -1784,7 +1831,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareSheen": {
     "name": "CompareSheen",
@@ -1821,7 +1869,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareSpecular": {
     "name": "CompareSpecular",
@@ -1858,7 +1907,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareTransmission": {
     "name": "CompareTransmission",
@@ -1895,7 +1945,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "CompareVolume": {
     "name": "CompareVolume",
@@ -1934,7 +1985,8 @@
     ],
     "authors": [
       "Eric Chadwick and DGG"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "Corset": {
     "name": "Corset",
@@ -1945,9 +1997,9 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Draco/Corset.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF/Corset.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Binary/Corset.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Binary/Corset.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Draco/Corset.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF-Binary/Corset.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Corset/glTF/Corset.gltf",
@@ -1968,7 +2020,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Cube": {
     "name": "Cube",
@@ -1999,7 +2052,8 @@
     ],
     "authors": [
       "Norbert Nopper"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "DamagedHelmet": {
     "name": "DamagedHelmet",
@@ -2011,9 +2065,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Embedded/DamagedHelmet.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF/DamagedHelmet.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Embedded/DamagedHelmet.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF-Binary/DamagedHelmet.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DamagedHelmet/glTF/DamagedHelmet.gltf",
@@ -2040,7 +2094,8 @@
     "authors": [
       "ctxwing",
       "theblueturtle_"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "DiffuseTransmissionPlant": {
     "name": "DiffuseTransmissionPlant",
@@ -2086,7 +2141,8 @@
     "authors": [
       "Eric Chadwick",
       "Rico Cilliers"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "DiffuseTransmissionTeacup": {
     "name": "DiffuseTransmissionTeacup",
@@ -2123,7 +2179,8 @@
     ],
     "authors": [
       "Polyhaven.com, and Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "DiffuseTransmissionTest": {
     "name": "DiffuseTransmissionTest",
@@ -2164,7 +2221,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "DirectionalLight": {
     "name": "DirectionalLight",
@@ -2200,7 +2258,8 @@
     ],
     "authors": [
       "Rickard Sahlin"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "DispersionTest": {
     "name": "DispersionTest",
@@ -2243,7 +2302,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "DragonAttenuation": {
     "name": "DragonAttenuation",
@@ -2257,9 +2317,9 @@
       "Variants"
     ],
     "variants": {
-      "glTF-Meshopt": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF-Meshopt/DragonAttenuation.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF/DragonAttenuation.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF-Binary/DragonAttenuation.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF-Binary/DragonAttenuation.glb",
+      "glTF-Meshopt": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/DragonAttenuation/glTF-Meshopt/DragonAttenuation.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
@@ -2285,7 +2345,8 @@
     ],
     "authors": [
       "Adobe"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "DragonDispersion": {
     "name": "DragonDispersion",
@@ -2328,7 +2389,8 @@
     ],
     "authors": [
       "Adobe"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "Duck": {
     "name": "Duck",
@@ -2340,11 +2402,11 @@
       "Meshopt"
     ],
     "variants": {
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF/Duck.gltf",
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Binary/Duck.glb",
       "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Draco/Duck.gltf",
       "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Embedded/Duck.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF/Duck.gltf",
-      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Quantized/Duck.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Binary/Duck.glb"
+      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Quantized/Duck.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF-Binary/Duck.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Duck/glTF/Duck.gltf",
@@ -2357,7 +2419,8 @@
     },
     "keywords": "[duck, duckling, yellow, rubber, bath, toy, cute, baby, water, play, fun, childhood, memory, nostalgia, vintage, collectible, figurine, decoration, gift]",
     "license": [],
-    "authors": []
+    "authors": [],
+    "isOnRenderFidelity": true
   },
   "EmissiveStrengthTest": {
     "name": "EmissiveStrengthTest",
@@ -2394,7 +2457,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "EnvironmentTest": {
     "name": "EnvironmentTest",
@@ -2419,7 +2483,8 @@
     },
     "keywords": "[3d, balls, spheres, white, black, gradient, transition, animation, sequence, rendering, computer-generated, graphic design, visual effects, motion graphics, digital art, illustration, creative, artistic, innovative]",
     "license": [],
-    "authors": []
+    "authors": [],
+    "isOnRenderFidelity": true
   },
   "FlightHelmet": {
     "name": "FlightHelmet",
@@ -2454,7 +2519,8 @@
     ],
     "authors": [
       "Gary Hsu"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Fox": {
     "name": "Fox",
@@ -2500,7 +2566,8 @@
       "PixelMannen",
       "tomkranis",
       "@AsoboStudio and @scurest"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "GlamVelvetSofa": {
     "name": "GlamVelvetSofa",
@@ -2544,7 +2611,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "GlassBrokenWindow": {
     "name": "GlassBrokenWindow",
@@ -2580,7 +2648,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "GlassHurricaneCandleHolder": {
     "name": "GlassHurricaneCandleHolder",
@@ -2619,7 +2688,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "GlassVasewithFlowers": {
     "name": "GlassVasewithFlowers",
@@ -2663,7 +2733,8 @@
     "authors": [
       "Eric Chadwick",
       "Rico Cilliers"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "InterpolationTest": {
     "name": "InterpolationTest",
@@ -2697,7 +2768,8 @@
     ],
     "authors": [
       "Khronos"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "IORTestGrid": {
     "name": "IORTestGrid",
@@ -2740,7 +2812,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "IridescenceAbalone": {
     "name": "IridescenceAbalone",
@@ -2782,7 +2855,8 @@
     "authors": [
       "Abby Crawford",
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "IridescenceDielectricSpheres": {
     "name": "IridescenceDielectricSpheres",
@@ -2819,7 +2893,8 @@
     ],
     "authors": [
       "Khronos"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "IridescenceLamp": {
     "name": "IridescenceLamp",
@@ -2862,7 +2937,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "IridescenceMetallicSpheres": {
     "name": "IridescenceMetallicSpheres",
@@ -2899,7 +2975,8 @@
     ],
     "authors": [
       "UX3D"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "IridescenceSuzanne": {
     "name": "IridescenceSuzanne",
@@ -2950,7 +3027,8 @@
     "authors": [
       "Mathias Kanzler",
       "Pascal Schoen"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "IridescentDishwithOlives": {
     "name": "IridescentDishwithOlives",
@@ -2994,7 +3072,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Lantern": {
     "name": "Lantern",
@@ -3006,10 +3085,10 @@
       "Meshopt"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Draco/Lantern.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF/Lantern.gltf",
-      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Quantized/Lantern.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Binary/Lantern.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Binary/Lantern.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Draco/Lantern.gltf",
+      "glTF-Quantized": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Quantized/Lantern.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF-Binary/Lantern.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Lantern/glTF/Lantern.gltf",
@@ -3036,7 +3115,8 @@
     "authors": [
       "sbtron",
       "Frank Galligan"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "LampwithPunctualLights": {
     "name": "LampwithPunctualLights",
@@ -3075,7 +3155,8 @@
     ],
     "authors": [
       "DGG"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "MandarinOrange": {
     "name": "MandarinOrange",
@@ -3116,7 +3197,8 @@
     "authors": [
       "zamdreamer",
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "MaterialsVariantsShoe": {
     "name": "MaterialsVariantsShoe",
@@ -3153,7 +3235,8 @@
     ],
     "authors": [
       "Shopify"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "MeshPrimitiveModes": {
     "name": "MeshPrimitiveModes",
@@ -3164,8 +3247,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MeshPrimitiveModes/glTF-Embedded/MeshPrimitiveModes.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MeshPrimitiveModes/glTF/MeshPrimitiveModes.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MeshPrimitiveModes/glTF/MeshPrimitiveModes.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MeshPrimitiveModes/glTF-Embedded/MeshPrimitiveModes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MeshPrimitiveModes/glTF/MeshPrimitiveModes.gltf",
     "image": "/images/MeshPrimitiveModes.webp",
@@ -3185,7 +3268,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "Metal-RoughSpheres": {
     "name": "Metal-RoughSpheres",
@@ -3196,9 +3280,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Embedded/MetalRoughSpheres.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Embedded/MetalRoughSpheres.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF-Binary/MetalRoughSpheres.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MetalRoughSpheres/glTF/MetalRoughSpheres.gltf",
@@ -3219,7 +3303,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Metal-RoughSpheres(textureless)": {
     "name": "Metal-RoughSpheres(textureless)",
@@ -3258,7 +3343,8 @@
     "authors": [
       "Krill Gavrilov",
       "CAD Model generated by Draw Harness script using Open CASCADE Technology"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Morph-PrimitivesTest": {
     "name": "Morph-PrimitivesTest",
@@ -3271,9 +3357,9 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Draco/MorphPrimitivesTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF/MorphPrimitivesTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Draco/MorphPrimitivesTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF-Binary/MorphPrimitivesTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MorphPrimitivesTest/glTF/MorphPrimitivesTest.gltf",
@@ -3300,7 +3386,8 @@
     "authors": [
       "ft-lab",
       "Frank Galligan"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "MorphStressTest": {
     "name": "MorphStressTest",
@@ -3335,7 +3422,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "MosquitoInAmber": {
     "name": "MosquitoInAmber",
@@ -3382,7 +3470,8 @@
     "authors": [
       "Loic Norgeot",
       "Sketchfab"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "MultipleScenes": {
     "name": "MultipleScenes",
@@ -3393,8 +3482,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultipleScenes/glTF-Embedded/MultipleScenes.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultipleScenes/glTF/MultipleScenes.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultipleScenes/glTF/MultipleScenes.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultipleScenes/glTF-Embedded/MultipleScenes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultipleScenes/glTF/MultipleScenes.gltf",
     "image": "/images/MultipleScenes.webp",
@@ -3414,7 +3503,8 @@
     ],
     "authors": [
       "Public"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "MultiUVTest": {
     "name": "MultiUVTest",
@@ -3425,9 +3515,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Embedded/MultiUVTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF/MultiUVTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Binary/MultiUVTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Binary/MultiUVTest.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Embedded/MultiUVTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF-Binary/MultiUVTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/MultiUVTest/glTF/MultiUVTest.gltf",
@@ -3448,7 +3538,8 @@
     ],
     "authors": [
       "Hilo 3D"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "NegativeScaleTest": {
     "name": "NegativeScaleTest",
@@ -3481,7 +3572,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Normal-TangentMirrorTest": {
     "name": "Normal-TangentMirrorTest",
@@ -3514,7 +3606,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Normal-TangentTest": {
     "name": "Normal-TangentTest",
@@ -3547,7 +3640,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "OrientationTest": {
     "name": "OrientationTest",
@@ -3558,9 +3652,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Embedded/OrientationTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF/OrientationTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Binary/OrientationTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Binary/OrientationTest.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Embedded/OrientationTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF-Binary/OrientationTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/OrientationTest/glTF/OrientationTest.gltf",
@@ -3581,7 +3675,8 @@
     ],
     "authors": [
       "Khronos"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "PointLightIntensityTest": {
     "name": "PointLightIntensityTest",
@@ -3620,7 +3715,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "PotOfCoals": {
     "name": "PotOfCoals",
@@ -3657,7 +3753,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "PotOfCoalsAnimationPointer": {
     "name": "PotOfCoalsAnimationPointer",
@@ -3705,7 +3802,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "PrimitiveModeNormalsTest": {
     "name": "PrimitiveModeNormalsTest",
@@ -3736,7 +3834,8 @@
     ],
     "authors": [
       "Unknown"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "RecursiveSkeletons": {
     "name": "RecursiveSkeletons",
@@ -3770,7 +3869,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "RiggedFigure": {
     "name": "RiggedFigure",
@@ -3782,10 +3882,10 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Draco/RiggedFigure.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Embedded/RiggedFigure.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF/RiggedFigure.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Binary/RiggedFigure.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Binary/RiggedFigure.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Draco/RiggedFigure.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Embedded/RiggedFigure.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF-Binary/RiggedFigure.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedFigure/glTF/RiggedFigure.gltf",
@@ -3806,7 +3906,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "RiggedSimple": {
     "name": "RiggedSimple",
@@ -3818,10 +3919,10 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Draco/RiggedSimple.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Embedded/RiggedSimple.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF/RiggedSimple.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Draco/RiggedSimple.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Embedded/RiggedSimple.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF-Binary/RiggedSimple.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/RiggedSimple/glTF/RiggedSimple.gltf",
@@ -3842,7 +3943,8 @@
     ],
     "authors": [
       "Cesium"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Skull": {
     "name": "Skull",
@@ -3851,7 +3953,7 @@
     "tags": [
       "Testing",
       "XMP JSON",
-      "Transmission",
+      "Diffuse Transmission",
       "Volume",
       "Dispersion",
       "Volume Scatter",
@@ -3863,7 +3965,7 @@
     },
     "extensionsUsed": [
       "KHR_xmp_json_ld",
-      "KHR_materials_transmission",
+      "KHR_materials_diffuse_transmission",
       "KHR_materials_volume",
       "KHR_materials_dispersion",
       "KHR_materials_volume_scatter",
@@ -3888,7 +3990,8 @@
     ],
     "authors": [
       "Vladimir Petkovic"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SciFiHelmet": {
     "name": "SciFiHelmet",
@@ -3925,7 +4028,8 @@
     "authors": [
       "Michael Pavlovic",
       "Norbert Nopper"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SheenChair": {
     "name": "SheenChair",
@@ -3966,7 +4070,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SheenCloth": {
     "name": "SheenCloth",
@@ -4003,7 +4108,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SheenTestGrid": {
     "name": "SheenTestGrid",
@@ -4040,7 +4146,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SheenWoodLeatherSofa": {
     "name": "SheenWoodLeatherSofa",
@@ -4089,7 +4196,8 @@
     "authors": [
       "Eric Chadwick",
       "Fran Calvente"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SimpleInstancing": {
     "name": "SimpleInstancing",
@@ -4126,7 +4234,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SimpleMaterial": {
     "name": "SimpleMaterial",
@@ -4137,8 +4246,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMaterial/glTF-Embedded/SimpleMaterial.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMaterial/glTF/SimpleMaterial.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMaterial/glTF/SimpleMaterial.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMaterial/glTF-Embedded/SimpleMaterial.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMaterial/glTF/SimpleMaterial.gltf",
     "image": "/images/SimpleMaterial.webp",
@@ -4158,7 +4267,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SimpleMeshes": {
     "name": "SimpleMeshes",
@@ -4169,8 +4279,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMeshes/glTF-Embedded/SimpleMeshes.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMeshes/glTF/SimpleMeshes.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMeshes/glTF/SimpleMeshes.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMeshes/glTF-Embedded/SimpleMeshes.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMeshes/glTF/SimpleMeshes.gltf",
     "image": "/images/SimpleMeshes.webp",
@@ -4190,7 +4300,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SimpleMorph": {
     "name": "SimpleMorph",
@@ -4203,8 +4314,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMorph/glTF-Embedded/SimpleMorph.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMorph/glTF/SimpleMorph.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMorph/glTF/SimpleMorph.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMorph/glTF-Embedded/SimpleMorph.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleMorph/glTF/SimpleMorph.gltf",
     "image": "/images/SimpleMorph.webp",
@@ -4224,7 +4335,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SimpleSkin": {
     "name": "SimpleSkin",
@@ -4236,8 +4348,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSkin/glTF-Embedded/SimpleSkin.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSkin/glTF/SimpleSkin.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSkin/glTF/SimpleSkin.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSkin/glTF-Embedded/SimpleSkin.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSkin/glTF/SimpleSkin.gltf",
     "image": "/images/SimpleSkin.webp",
@@ -4257,7 +4369,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SimpleSparseAccessor": {
     "name": "SimpleSparseAccessor",
@@ -4268,8 +4381,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSparseAccessor/glTF-Embedded/SimpleSparseAccessor.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSparseAccessor/glTF/SimpleSparseAccessor.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSparseAccessor/glTF/SimpleSparseAccessor.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSparseAccessor/glTF-Embedded/SimpleSparseAccessor.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleSparseAccessor/glTF/SimpleSparseAccessor.gltf",
     "image": "/images/SimpleSparseAccessor.webp",
@@ -4289,7 +4402,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SimpleTexture": {
     "name": "SimpleTexture",
@@ -4300,8 +4414,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleTexture/glTF-Embedded/SimpleTexture.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleTexture/glTF/SimpleTexture.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleTexture/glTF/SimpleTexture.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleTexture/glTF-Embedded/SimpleTexture.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SimpleTexture/glTF/SimpleTexture.gltf",
     "image": "/images/SimpleTexture.webp",
@@ -4321,7 +4435,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SpecGlossVsMetalRough": {
     "name": "SpecGlossVsMetalRough",
@@ -4358,7 +4473,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "SpecularSilkPouf": {
     "name": "SpecularSilkPouf",
@@ -4397,7 +4513,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SpecularTest": {
     "name": "SpecularTest",
@@ -4434,7 +4551,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Sponza": {
     "name": "Sponza",
@@ -4456,7 +4574,8 @@
     },
     "keywords": "[3d model, tissue box, rectangular shape, textured surface, gray color, rectangular prism, cardboard material, household item, bathroom accessory, decorative element, functional design, simple shape, everyday object, home decor, interior design, furniture, table top, desk accessory, office supply, paper product]",
     "license": [],
-    "authors": []
+    "authors": [],
+    "isOnRenderFidelity": true
   },
   "StainedGlassLamp": {
     "name": "StainedGlassLamp",
@@ -4474,8 +4593,8 @@
     ],
     "variants": {
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF/StainedGlassLamp.gltf",
-      "glTF-KTX-BasisU": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF-KTX-BasisU/StainedGlassLamp.gltf",
-      "glTF-JPG-PNG": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF-JPG-PNG/StainedGlassLamp.gltf"
+      "glTF-JPG-PNG": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF-JPG-PNG/StainedGlassLamp.gltf",
+      "glTF-KTX-BasisU": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/StainedGlassLamp/glTF-KTX-BasisU/StainedGlassLamp.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
@@ -4502,7 +4621,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "SunglassesKhronos": {
     "name": "SunglassesKhronos",
@@ -4518,9 +4638,9 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Draco/SunglassesKhronos.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF/SunglassesKhronos.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Binary/SunglassesKhronos.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/SunglassesKhronos/glTF-Draco/SunglassesKhronos.gltf"
     },
     "extensionsUsed": [
       "KHR_materials_transmission",
@@ -4547,7 +4667,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "Suzanne": {
     "name": "Suzanne",
@@ -4578,7 +4699,8 @@
     ],
     "authors": [
       "Norbert Nopper"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TextureCoordinateTest": {
     "name": "TextureCoordinateTest",
@@ -4589,9 +4711,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Embedded/TextureCoordinateTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF/TextureCoordinateTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Binary/TextureCoordinateTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Binary/TextureCoordinateTest.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Embedded/TextureCoordinateTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF-Binary/TextureCoordinateTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureCoordinateTest/glTF/TextureCoordinateTest.gltf",
@@ -4612,7 +4734,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TextureEncodingTest": {
     "name": "TextureEncodingTest",
@@ -4645,7 +4768,8 @@
     ],
     "authors": [
       "lexaknyazev"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TextureLinearInterpolationTest": {
     "name": "TextureLinearInterpolationTest",
@@ -4678,7 +4802,8 @@
     ],
     "authors": [
       "lexaknyazev"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TextureSettingsTest": {
     "name": "TextureSettingsTest",
@@ -4689,9 +4814,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Embedded/TextureSettingsTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF/TextureSettingsTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Binary/TextureSettingsTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Binary/TextureSettingsTest.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Embedded/TextureSettingsTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF-Binary/TextureSettingsTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TextureSettingsTest/glTF/TextureSettingsTest.gltf",
@@ -4712,7 +4837,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TextureTransformMultiTest": {
     "name": "TextureTransformMultiTest",
@@ -4753,7 +4879,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TextureTransformTest": {
     "name": "TextureTransformTest",
@@ -4788,7 +4915,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "ToyCar": {
     "name": "ToyCar",
@@ -4837,7 +4965,8 @@
     "authors": [
       "Guido Odendahl",
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TransmissionOrderTest": {
     "name": "TransmissionOrderTest",
@@ -4882,7 +5011,8 @@
     "authors": [
       "Ed Mackey",
       "Adobe"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "TransmissionRoughnessTest": {
     "name": "TransmissionRoughnessTest",
@@ -4923,7 +5053,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TransmissionTest": {
     "name": "TransmissionTest",
@@ -4962,7 +5093,8 @@
     ],
     "authors": [
       "Adobe"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TransmissionThinwallTestGrid": {
     "name": "TransmissionThinwallTestGrid",
@@ -5003,7 +5135,8 @@
     ],
     "authors": [
       "Eric Chadwick"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "Triangle": {
     "name": "Triangle",
@@ -5014,8 +5147,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Triangle/glTF-Embedded/Triangle.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Triangle/glTF/Triangle.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Triangle/glTF/Triangle.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Triangle/glTF-Embedded/Triangle.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/Triangle/glTF/Triangle.gltf",
     "image": "/images/Triangle.webp",
@@ -5035,7 +5168,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TriangleWithoutIndices": {
     "name": "TriangleWithoutIndices",
@@ -5046,8 +5180,8 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TriangleWithoutIndices/glTF-Embedded/TriangleWithoutIndices.gltf",
-      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TriangleWithoutIndices/glTF/TriangleWithoutIndices.gltf"
+      "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TriangleWithoutIndices/glTF/TriangleWithoutIndices.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TriangleWithoutIndices/glTF-Embedded/TriangleWithoutIndices.gltf"
     },
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/TriangleWithoutIndices/glTF/TriangleWithoutIndices.gltf",
     "image": "/images/TriangleWithoutIndices.webp",
@@ -5067,7 +5201,8 @@
     ],
     "authors": [
       "Marco Hutter (https://github.com/javagl/)"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "TwoSidedPlane": {
     "name": "TwoSidedPlane",
@@ -5097,7 +5232,8 @@
     ],
     "authors": [
       "Norbert Nopper"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "Unicode%E2%9D%A4%E2%99%BBTest": {
     "name": "Unicode❤♻Test",
@@ -5130,7 +5266,8 @@
     ],
     "authors": [
       "Viktor Kovács"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "UnlitTest": {
     "name": "UnlitTest",
@@ -5167,7 +5304,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "VertexColorTest": {
     "name": "VertexColorTest",
@@ -5178,9 +5316,9 @@
       "Core"
     ],
     "variants": {
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Embedded/VertexColorTest.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF/VertexColorTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Binary/VertexColorTest.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Binary/VertexColorTest.glb",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Embedded/VertexColorTest.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF-Binary/VertexColorTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VertexColorTest/glTF/VertexColorTest.gltf",
@@ -5201,7 +5339,8 @@
     ],
     "authors": [
       "Ed Mackey"
-    ]
+    ],
+    "isOnRenderFidelity": true
   },
   "VirtualCity": {
     "name": "VirtualCity",
@@ -5213,10 +5352,10 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Draco/VirtualCity.gltf",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Embedded/VirtualCity.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF/VirtualCity.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Binary/VirtualCity.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Binary/VirtualCity.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Draco/VirtualCity.gltf",
+      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Embedded/VirtualCity.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF-Binary/VirtualCity.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/VirtualCity/glTF/VirtualCity.gltf",
@@ -5229,7 +5368,8 @@
     },
     "keywords": "[cityscape, futuristic, sci-fi, urban, landscape, architecture, skyscrapers, buildings, clouds, sky, sunset, orange, yellow, pink, purple, blue, green, brown, gray, black, white]",
     "license": [],
-    "authors": []
+    "authors": [],
+    "isOnRenderFidelity": false
   },
   "WaterBottle": {
     "name": "WaterBottle",
@@ -5240,9 +5380,9 @@
       "Draco"
     ],
     "variants": {
-      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Draco/WaterBottle.gltf",
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF/WaterBottle.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Binary/WaterBottle.glb"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Binary/WaterBottle.glb",
+      "glTF-Draco": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Draco/WaterBottle.gltf"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF-Binary/WaterBottle.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/WaterBottle/glTF/WaterBottle.gltf",
@@ -5263,7 +5403,8 @@
     ],
     "authors": [
       "Microsoft"
-    ]
+    ],
+    "isOnRenderFidelity": false
   },
   "XmpMetadataRoundedCube": {
     "name": "XmpMetadataRoundedCube",
@@ -5300,6 +5441,7 @@
     ],
     "authors": [
       "Adam Morris"
-    ]
+    ],
+    "isOnRenderFidelity": false
   }
 }

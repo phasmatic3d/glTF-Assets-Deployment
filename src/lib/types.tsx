@@ -13,5 +13,6 @@ export type ModelType = {
   authors: Array<string>
   license: Array<{license: string, url:string, icon:string}>
   variants: Record<string, string>,
-  keywords: string
+  keywords: string,
+  isOnRenderFidelity: boolean
 };
