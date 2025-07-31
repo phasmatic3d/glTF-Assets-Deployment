@@ -353,6 +353,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         }
       };
       customGatherStatistics(state).then(res => { statsCallback(res); });
+      // TODO: Debug
+      console.log(`Model loaded`);
       
       await resourceLoader.loadEnvironment(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/low_resolution_hdrs/Cannon_Exterior.hdr`, {
          lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
@@ -361,6 +363,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       }).then((environment) => {
         state.environment = environment;
       })
+      // TODO: Debug
+      console.log(`Env map loaded`);
       //state.renderingParameters.iblIntensity = Math.pow(10, 0.1/*intensity*/);
       state.sceneIndex = state.gltf.scene === undefined ? 0 : state.gltf.scene;
       const scene = state.gltf.scenes[state.sceneIndex];
@@ -374,6 +378,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       setIsModelLoaded(true);
       const update = () =>
       { 
+        // TODO: Debug
+        console.log(`Render`);
         if(change_variant)
         {
           resourceLoader.loadGltf(variants[active_variant]).then(res => { console.log("Reload gltf"); state.gltf = res});          
@@ -436,6 +442,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
           const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
 
+          // TODO: Debug
+          console.log(`Resize  ${width} and ${height}`);
+
           if(document.fullscreenElement == null)
           {
             canvasContainerWrapper.style.width = `${width}px`;
@@ -468,6 +477,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   React.useEffect(() => {
     const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
     const isKTXLoaded = !!document.querySelector('script[src="/libs/libktx.js"]')
+
+    // TODO: Debug
+    console.log(`Start Live Preview ${isDracoLoaded} and ${isKTXLoaded}`);
     setKTXLoaded(isKTXLoaded);
     setDracoLoaded(isDracoLoaded);
 
