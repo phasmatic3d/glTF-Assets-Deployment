@@ -212,6 +212,8 @@ await (async () => {
       {
         OutputModelMap[name].license = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => {return {license: e.license, url: e.licenseUrl, icon: e.icon}});
         OutputModelMap[name].authors = metadata.legal.filter(e => e.icon && e.icon.length > 0).map(e => e.artist);
+        if(OutputModelMap[name].authors.length === 0)
+          OutputModelMap[name].authors = metadata.legal.filter(e => e.artist && e.artist.length > 0).map(e => e.artist);
       }
 
       if(ModelKeywords[name])

@@ -931,7 +931,9 @@
     },
     "keywords": "[robot, machine, artificial intelligence, futuristic, technology, innovation, design, engineering, mechanical, digital, computer-generated, 3D model, animation, simulation, virtual reality, augmented reality, robotics, automation, cybernetics]",
     "license": [],
-    "authors": [],
+    "authors": [
+      "Keith Hunter"
+    ],
     "isOnRenderFidelity": true
   },
   "Cameras": {
@@ -2419,7 +2421,9 @@
     },
     "keywords": "[duck, duckling, yellow, rubber, bath, toy, cute, baby, water, play, fun, childhood, memory, nostalgia, vintage, collectible, figurine, decoration, gift]",
     "license": [],
-    "authors": [],
+    "authors": [
+      "Sony"
+    ],
     "isOnRenderFidelity": true
   },
   "EmissiveStrengthTest": {
@@ -2483,7 +2487,9 @@
     },
     "keywords": "[3d, balls, spheres, white, black, gradient, transition, animation, sequence, rendering, computer-generated, graphic design, visual effects, motion graphics, digital art, illustration, creative, artistic, innovative]",
     "license": [],
-    "authors": [],
+    "authors": [
+      "Adobe"
+    ],
     "isOnRenderFidelity": true
   },
   "FlightHelmet": {
@@ -4574,7 +4580,9 @@
     },
     "keywords": "[3d model, tissue box, rectangular shape, textured surface, gray color, rectangular prism, cardboard material, household item, bathroom accessory, decorative element, functional design, simple shape, everyday object, home decor, interior design, furniture, table top, desk accessory, office supply, paper product]",
     "license": [],
-    "authors": [],
+    "authors": [
+      "Crytek"
+    ],
     "isOnRenderFidelity": true
   },
   "StainedGlassLamp": {
@@ -5368,7 +5376,9 @@
     },
     "keywords": "[cityscape, futuristic, sci-fi, urban, landscape, architecture, skyscrapers, buildings, clouds, sky, sunset, orange, yellow, pink, purple, blue, green, brown, gray, black, white]",
     "license": [],
-    "authors": [],
+    "authors": [
+      "3DRT"
+    ],
     "isOnRenderFidelity": false
   },
   "WaterBottle": {

@@ -314,7 +314,10 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
         const imagesFileSizes = [];
         for(let i = 0; i < state.gltf.images.length; i++)
-          imagesFileSizes.push(loadBlob(state.gltf.images[i].image.src));
+        {
+          if(state.gltf.images[i].image.src)
+            imagesFileSizes.push(loadBlob(state.gltf.images[i].image.src));
+        }
         const imagesFileSize = (await Promise.all(imagesFileSizes)).reduce((acc: number, curr: number) => acc + curr, 0);
         const totalFileSize = await loadBlob(src);
 
