@@ -16,9 +16,10 @@ import License from '../License';
 
 type ExternalLinkProps = {
   url: string,
+  alt?: string
 }
-function ExternalLink( {url, children} : React.PropsWithChildren<ExternalLinkProps>) {
-  return (<Link href={url} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>{children} <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>)
+function ExternalLink( {url, alt, children} : React.PropsWithChildren<ExternalLinkProps>) {
+  return (<Link href={url} color="inherit" underline='hover' target="_blank" rel="noopener" aria-label={alt} sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>{children} <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>)
 }
 
 type ModelPageProps = {
@@ -93,7 +94,7 @@ export default function ComparePage({name, label, image, tags, description, mode
             <Link href={downloadUrl} color="inherit" underline='hover' rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Download GLB<FileDownloadIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
           </Box>}
           <Box mr={3}>
-            <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+            <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}} aria-label='Share this link'>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
           </Box>
           {downloadUrl && <Box mr={3}>
             <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>View on Sample Viewer</ExternalLink>
@@ -102,7 +103,7 @@ export default function ComparePage({name, label, image, tags, description, mode
             <ExternalLink url={`https://github.khronos.org/glTF-Render-Fidelity/model/${name}`}>View on Render Fidelity</ExternalLink>
           </Box>}
           <Box mr={1}>
-            <Link href={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>More info <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>
+            <ExternalLink url={`https://github.com/KhronosGroup/glTF-Sample-Assets/blob/main/Models/${name}/README.md`} alt="Description on GitHub">More info</ExternalLink>
           </Box>
         </Box>
         <Divider />
@@ -136,7 +137,7 @@ export default function ComparePage({name, label, image, tags, description, mode
       {/* Right Content - Suggested */}
       <Box sx={{flex: 1}} mt={{sm: 0, xs: 2}}>
         <Grid className={styles.side} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
-          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6' component='h2'>{"Top picks"}</Typography></Box>
+          <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6' component='h2'>{"Related Assets"}</Typography></Box>
           {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6' component='h2'>{"See Also"}</Typography></Box>
           {suggestedModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
