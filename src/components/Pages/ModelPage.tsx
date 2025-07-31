@@ -37,7 +37,6 @@ type ModelPageProps = {
 export default function ComparePage({name, label, image, tags, description, modelURL, downloadUrl, model, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
-  const [isPreviewReady, setPreviewReady] = React.useState(false);
 
   const [meshStats, setMeshStats] = React.useState<Stats>({
     totalImagesFileSize: 0,
@@ -69,7 +68,7 @@ export default function ComparePage({name, label, image, tags, description, mode
     <Box display="flex" sx={{width: '100%'}} flexDirection={{sm: 'row', xs:'column'}}>
       {/* Main Content */}
       <Box flex={4} p={{sm: 2, xs: 0}}>
-        <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} variants={model.variants} statsCallback={(stats => { setMeshStats(stats)})} onReady={() => setPreviewReady(true)}/>
+        <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} variants={model.variants} statsCallback={setMeshStats}/>
         <Typography variant='h5' component="h1" sx={{paddingTop: 2}}>{label}</Typography>
         <Typography variant='body1' component='span' sx={{ml:1, fontWeight:'bold'}}>by: </Typography>{model.authors.join(", ")}
         {/* Tags */}

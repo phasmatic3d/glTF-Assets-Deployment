@@ -24,8 +24,7 @@ export type LivePreviewSampleRendererProps = {
   src: string,
   imgSrc: string,
   variants: Record<string, string>,
-  statsCallback: (stats: Stats) => void,
-  onReady: () => void
+  statsCallback: (stats: Stats) => void
 }
 
 const orbit = {
@@ -191,7 +190,7 @@ interface WEBGL_polygon_mode {
   polygonModeWEBGL: (face: number, mode: number) => void;
 }
 
-export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback, onReady}: LivePreviewSampleRendererProps) {
+export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback}: LivePreviewSampleRendererProps) {
 
   const [ktxLoaded, setKTXLoaded] = React.useState(false);
   const [dracoLoaded, setDracoLoaded] = React.useState(false);
@@ -472,22 +471,25 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     setKTXLoaded(isKTXLoaded);
     setDracoLoaded(isDracoLoaded);
 
-    if(canvasRef.current)
+    const canvas = canvasRef.current;
+    if(canvas)
     {
-      canvasRef.current.addEventListener('wheel', handleMouseWheel, { passive: false });
-      canvasRef.current.addEventListener('touchstart', handleTouchStart, { passive: true });
-      canvasRef.current.addEventListener('touchmove', handleTouchMove, { passive: true });
-      canvasRef.current.addEventListener('touchend', handleTouchEnd);
+      canvas.addEventListener('wheel', handleMouseWheel, { passive: false });
+      canvas.addEventListener('touchstart', handleTouchStart, { passive: true });
+      canvas.addEventListener('touchmove', handleTouchMove, { passive: true });
+      canvas.addEventListener('touchend', handleTouchEnd);
     }
 
     return () => { 
+      // TODO: Debug
+      console.log("Delete Live Preview")
       window.cancelAnimationFrame(current_update_func_id);
-      if(canvasRef.current)
+      if(canvas)
       {
-        canvasRef.current.removeEventListener('wheel', handleMouseWheel);
-        canvasRef.current.removeEventListener('touchstart', handleTouchStart);
-        canvasRef.current.removeEventListener('touchmove', handleTouchMove);
-        canvasRef.current.removeEventListener('touchend', handleTouchEnd);
+        canvas.removeEventListener('wheel', handleMouseWheel);
+        canvas.removeEventListener('touchstart', handleTouchStart);
+        canvas.removeEventListener('touchmove', handleTouchMove);
+        canvas.removeEventListener('touchend', handleTouchEnd);
       }
     };
   }, [])
