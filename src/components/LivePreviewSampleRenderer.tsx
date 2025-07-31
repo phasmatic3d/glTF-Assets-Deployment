@@ -242,7 +242,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
   React.useEffect(() => {
     // TODO: Debug
-    console.log(`Start src ${src}, ${ktxLoaded}, ${dracoLoaded}`);
+    console.log(`Start src ${src}, ${dracoLoaded}, ${ktxLoaded}`);
     if((ktxLoaded && dracoLoaded) == false)
       return;
     if(canvasRef == null || canvasRef.current == null) { return; }
@@ -483,7 +483,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
   React.useEffect(() => {
     const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
-    const isKTXLoaded = !!document.querySelector('script[src="/libs/libktx.js"]')
+    const isKTXLoaded = !!document.querySelector(`script[src="${basePath}/libs/libktx.js"]`)
 
     // TODO: Debug
     console.log(`Start Live Preview ${isDracoLoaded} and ${isKTXLoaded}`);
