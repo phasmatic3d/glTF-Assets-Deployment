@@ -448,7 +448,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       const toolResize = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
                    
-          // Calculate new dimensions while maintaining aspect ratio
+          // Calculate new dimensions 
           const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
           const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
 
@@ -457,14 +457,14 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
           if(document.fullscreenElement == null)
           {
-            canvasContainerWrapper.style.width = `${width}px`;
+            //canvasContainerWrapper.style.width = `${width}px`;
             canvasContainerWrapper.style.height = `${height}px`;
           }
     
           canvas.width = width;
           canvas.height = height;
-          canvas.style.width = `${width}px`;
-          canvas.style.height = `${height}px`;
+          //canvas.style.width = `${width}px`;
+          //canvas.style.height = `${height}px`;
       };
 
       const resizeObserver = new ResizeObserver(() => {
@@ -520,8 +520,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       <Box ref={canvasContainerRef}>
         <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="beforeInteractive" onLoad={() => { console.log("LOADED Draco"); setDracoLoaded(true);}} onReady={() => { console.log("READY Draco");}} />
         <Script src={`${basePath}/libs/libktx.js`} strategy="beforeInteractive" onLoad={() => { console.log("LOADED KTX"); setKTXLoaded(true); }} onReady={() => { console.log("READY KTX");}}/>
-        <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '40vh'}}>
-          <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{touchAction: 'none', overscrollBehavior: 'contain'}}/>
+        <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '50vh'}}>
+          <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{touchAction: 'none', overscrollBehavior: 'contain', width: '100%'}}/>
           <img ref={imgRef} src={imgSrc} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10, objectFit: 'contain', width:"inherit", height:'inherit'}} alt="Asset Preview"/>
           {!isModelLoaded && <Box sx={{position: 'absolute', left: 0, top: 'calc(50% - 0.5 * 5rem)', width: '100%'}}>
             <CircularProgress color="primary" size={'5rem'}/>
