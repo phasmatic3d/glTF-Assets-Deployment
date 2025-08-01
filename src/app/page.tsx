@@ -4,7 +4,7 @@ import LandingPage from "@/components/Pages/LandingPage";
 import ModelList from "@/data/model-index.SampleAssets.json"
 
 export const metadata: Metadata = {
-  title: 'Khronos Sample Assets',
+  title: 'Sample Assets | Khronos',
   description: 'Khronos Sample Assets Website',
 }
 
