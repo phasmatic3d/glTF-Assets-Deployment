@@ -1,7 +1,7 @@
 "use client"
 
 import { Fab, Tooltip } from '@mui/material';
-import BugReportIcon from '@mui/icons-material/BugReport';
+import EditNoteIcon from '@mui/icons-material/EditNote';
 import { useTheme } from "@mui/material/styles";
 
 const BugReportButton = () => {
@@ -22,7 +22,7 @@ const BugReportButton = () => {
             zIndex: 1000,
           }}
         >
-          <BugReportIcon />
+          <EditNoteIcon />
         </Fab>
       </Tooltip>
     </>
