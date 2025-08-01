@@ -259,24 +259,18 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   }, [debugOutput])
 
   React.useEffect(() => {
-    // TODO: Debug
-    console.log(`Start src ${src}, ${dracoLoaded}, ${ktxLoaded}`);
+    
     if((ktxLoaded && dracoLoaded) == false)
       return;
     if(canvasRef == null || canvasRef.current == null) { return; }
     const canvas = canvasRef.current;
     const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
 
-    // TODO: Debug
-    console.log(`WebGL started`);
-
     // Is the wireframe extension supported?
     webgl2_wireframe_extensions = webGl2Context.getExtension("WEBGL_polygon_mode") as WEBGL_polygon_mode;
     setHasWireframeExtension(webgl2_wireframe_extensions !== null);
 
     const load = async () => {
-      // TODO: Debug
-      console.log(`Start Load`);
 
       const {GltfView, GltfState} = await import('@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js');
       const view = new GltfView(webGl2Context);
@@ -341,7 +335,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
             externalBuffersFileSize += buffer.byteLength;
           }
         }
-        let externalImagesFileSizePromises = [];
+        const externalImagesFileSizePromises = [];
         for(const image of state.gltf.images)
         {
           if(image.uri && image.uri.length > 0 && !image.uri.startsWith("data:"))
@@ -392,8 +386,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         }
       };
       customGatherStatistics(state, view, src).then(res => { statsCallback(res); });
-      // TODO: Debug
-      console.log(`Model loaded`);
       
       await resourceLoader.loadEnvironment(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/low_resolution_hdrs/Cannon_Exterior.hdr`, {
          lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
@@ -402,8 +394,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       }).then((environment) => {
         state.environment = environment;
       })
-      // TODO: Debug
-      console.log(`Env map loaded`);
       //state.renderingParameters.iblIntensity = Math.pow(10, 0.1/*intensity*/);
       state.sceneIndex = state.gltf.scene === undefined ? 0 : state.gltf.scene;
       const scene = state.gltf.scenes[state.sceneIndex];
@@ -418,8 +408,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       setIsModelLoaded(true);
       const update = () =>
       { 
-        // TODO: Debug
-        console.log(`Render`);
         if(change_variant)
         {
           resourceLoader.loadGltf(variants[active_variant])
@@ -485,9 +473,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
         const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
 
-        // TODO: Debug
-        console.log(`Resize  ${width} and ${height}`);
-
         if(document.fullscreenElement == null)
         {
           //canvasContainerWrapper.style.width = `${width}px`;
@@ -521,8 +506,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     const isDracoLoaded = !!document.querySelector('script[src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"]')
     const isKTXLoaded = !!document.querySelector(`script[src="${basePath}/libs/libktx.js"]`)
 
-    // TODO: Debug
-    console.log(`Start Live Preview ${isDracoLoaded} and ${isKTXLoaded}`);
     setKTXLoaded(isKTXLoaded);
     setDracoLoaded(isDracoLoaded);
 
@@ -536,8 +519,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     }
 
     return () => { 
-      // TODO: Debug
-      console.log("Delete Live Preview")
       window.cancelAnimationFrame(current_update_func_id);
       if(canvas)
       {
