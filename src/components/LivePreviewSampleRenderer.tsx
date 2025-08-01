@@ -425,7 +425,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           resourceLoader.loadGltf(variants[active_variant])
             .then(res => { console.log("Reload gltf"); state.gltf = res;})
             .then(_ => {return customGatherStatistics(state, view, variants[active_variant])})
-            .then(res => { statsCallback(res); });          
+            .then(res => { statsCallback(res); setIsModelLoaded(true);});          
           change_variant = false;
         }
         // Rendering Properties
@@ -656,7 +656,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                     labelId="variants-label"
                     value={modelVariants}
                     label="Format Variants"
-                    onChange={(e) => { active_variant = e.target.value; change_variant = true; setModelVariants(e.target.value)}}
+                    onChange={(e) => { active_variant = e.target.value; change_variant = true; setIsModelLoaded(false); setShowOptions(false); setModelVariants(e.target.value)}}
                     MenuProps={{
                       disableScrollLock: true, // disables body padding-right
                     }}
