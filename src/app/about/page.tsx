@@ -1,5 +1,11 @@
+import type { Metadata } from "next";
 import fs from 'fs';
 import Showdown from "showdown";
+
+export const metadata: Metadata = {
+  title: "About | Sample Assets | Khronos",
+  description: "Khronos Sample Assets Website",
+};
 
 export default function About() {
     const string = fs.readFileSync("./src/data/ABOUT.md", 'utf8')

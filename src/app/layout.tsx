@@ -29,8 +29,8 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Khronos Render Fidelity",
-  description: "Khronos Render Fidelity Website",
+  title: "Sample Assets | Khronos",
+  description: "Khronos Sample Assets Website",
 };
 
 export default function RootLayout({
