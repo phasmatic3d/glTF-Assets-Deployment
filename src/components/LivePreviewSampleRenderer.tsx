@@ -1,7 +1,7 @@
 "use client"
 import React from 'react'
 import Script from 'next/script'
-import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem, CircularProgress } from "@mui/material";
+import { Box, Button, IconButton, Paper, FormControlLabel, Switch, Typography, Select, FormControl, InputLabel, MenuItem, CircularProgress, ToggleButtonGroup, ToggleButton } from "@mui/material";
 import MenuIcon from '@mui/icons-material/Menu';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import normalizeWheel from 'normalize-wheel';
@@ -193,6 +193,13 @@ interface WEBGL_polygon_mode {
   polygonModeWEBGL: (face: number, mode: number) => void;
 }
 
+const loadBlob = async (src: string) => {
+  return fetch(src)
+  .then(response => response.blob())
+  .then(blob => { return blob.size; })
+  .catch(err => { return 0; });
+}
+
 export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsCallback}: LivePreviewSampleRendererProps) {
 
   const [ktxLoaded, setKTXLoaded] = React.useState(false);
@@ -201,6 +208,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   const [debugOutput, setDebugOutput] = React.useState("None");
   const [extensions, setExtensions] = React.useState(new Map<string, boolean>());
   const [animations, setAnimations] = React.useState<Array<string>>([]);
+  const [selectedAnimation, setSelectedAnimation] = React.useState("");
   const [modelVariants, setModelVariants] = React.useState(src.endsWith(".glb") ? 'glTF-Binary' : 'glTF');
   const [isModelLoaded, setIsModelLoaded] = React.useState(false);
   const [hasWireframeExtensions, setHasWireframeExtension] = React.useState(false);
@@ -215,8 +223,15 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     active_extensions.set(extension, value);
   }
 
-  const toggleAnimation = (animation_name: string) =>
+  const toggleAnimation = (animation_name: string | null) =>
   {
+    if(animation_name === null)
+    {
+      active_animations = [];
+      setSelectedAnimation("");
+      return;
+    }
+    setSelectedAnimation(animation_name);
     const index = animations.indexOf(animation_name)
     if(index >= 0)
       active_animations = [index];
@@ -279,6 +294,8 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         animation_names.push(animation.name?? "Animate");
       }
       setAnimations(animation_names);
+      if(animation_names.length > 0)
+        setSelectedAnimation(animation_names[0]);
       if(state.gltf.extensionsUsed)
       {
         const extension_names = new Map<string, boolean>();
@@ -292,7 +309,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         setExtensions(extension_names);
       }
       
-      const customGatherStatistics = async (state: InstanceType<typeof GltfState>) : Promise<Stats> => {
+      const customGatherStatistics = async (state: InstanceType<typeof GltfState>, view: InstanceType<typeof GltfView>, assetSource: string) : Promise<Stats> => {
 
         const viewerStats = view.gatherStatistics(state);
 
@@ -308,13 +325,6 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
             };
         }
 
-        const loadBlob = async (src: string) => {
-          return fetch(src)
-          .then(response => response.blob())
-          .then(blob => { return blob.size; })
-          .catch(err => { return 0; });
-        }
-
         const imagesFileSizes = [];
         for(let i = 0; i < state.gltf.images.length; i++)
         {
@@ -322,7 +332,23 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
             imagesFileSizes.push(loadBlob(state.gltf.images[i].image.src));
         }
         const imagesFileSize = (await Promise.all(imagesFileSizes)).reduce((acc: number, curr: number) => acc + curr, 0);
-        const totalFileSize = await loadBlob(src);
+        const srcFileSize = await loadBlob(assetSource);
+        let externalBuffersFileSize = 0;
+        for(const buffer of state.gltf.buffers)
+        {
+          if(buffer.uri && buffer.uri.length > 0 && !buffer.uri.startsWith("data:"))
+          {
+            externalBuffersFileSize += buffer.byteLength;
+          }
+        }
+        let externalImagesFileSizePromises = [];
+        for(const image of state.gltf.images)
+        {
+          if(image.uri && image.uri.length > 0 && !image.uri.startsWith("data:"))
+            externalImagesFileSizePromises.push(loadBlob(image.uri));
+        }
+        const externalImagesFileSize = (await Promise.all(externalImagesFileSizePromises)).reduce((acc: number, curr: number) => acc + curr, 0);
+        const totalFileSize = srcFileSize + externalBuffersFileSize + externalImagesFileSize;
 
         // Face and Triangle count. Copied code from gltf-sample-renderer
         let numberOfVertices = 0;
@@ -365,7 +391,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           totalFileSize: totalFileSize
         }
       };
-      customGatherStatistics(state).then(res => { statsCallback(res); });
+      customGatherStatistics(state, view, src).then(res => { statsCallback(res); });
       // TODO: Debug
       console.log(`Model loaded`);
       
@@ -396,7 +422,10 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         console.log(`Render`);
         if(change_variant)
         {
-          resourceLoader.loadGltf(variants[active_variant]).then(res => { console.log("Reload gltf"); state.gltf = res});          
+          resourceLoader.loadGltf(variants[active_variant])
+            .then(res => { console.log("Reload gltf"); state.gltf = res;})
+            .then(_ => {return customGatherStatistics(state, view, variants[active_variant])})
+            .then(res => { statsCallback(res); });          
           change_variant = false;
         }
         // Rendering Properties
@@ -580,21 +609,24 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                 ))}
               </Box>
 
-              <Box display={animations.length>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' mb={1} mt={2}>
-                <Typography variant="subtitle2" gutterBottom>
-                  Animation
+              <Box display={animations.length>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' mb={1} mt={2} width='100%'>
+                <Typography variant="subtitle1" gutterBottom>
+                  Animations:
                 </Typography>
                 
+                <ToggleButtonGroup value={selectedAnimation} exclusive orientation='vertical' fullWidth onChange={(event: React.MouseEvent<HTMLElement>, newValue: string | null) => toggleAnimation(newValue)} sx={{width: '100%'}}>
                   {animations.map((anim) => (
-                    <Button
+                    <ToggleButton
                       key={anim}
-                      sx={{ justifyContent: 'flex-start', textAlign: 'left', textTransform: 'none' }}
-                      color="inherit"
-                      onClick={() => toggleAnimation(anim)}
+                      sx={{ textTransform: 'none', overflowWrap:"anywhere", width: '100%' }}
+                      value={anim}
+                      aria-label={`Enable ${anim}`}
                     >
                       {anim}
-                    </Button>
+                    </ToggleButton>
                   ))}
+
+                </ToggleButtonGroup>
                 
               </Box>
               <Box width='100%' mt={2}>
