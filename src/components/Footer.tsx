@@ -14,7 +14,7 @@ export default function Footer() {
 
     return (
       <footer style={{background:bgColor}}>
-        <Box display='flex' flexDirection='column' pl={{xs:2, sm:3}} pr={{xs:2, sm:3}} style={{width: "100%", maxWidth: "1900px", margin: 'auto', background:bgColor}}>
+        <Box display='flex' flexDirection='column' pl={{xs:2, sm:3}} pr={{xs:2, sm:3}} style={{width: "100%", maxWidth: "1280px", margin: 'auto', background:bgColor}}>
           <Box flex={1} width={"100%"} sx={{margin: "auto", pt:"20px"}} display='flex' justifyContent='flex-start'>
             <a href="https://www.khronos.org/" aria-label='Link to Khronos website'>
               <img
@@ -33,7 +33,7 @@ export default function Footer() {
             <Link href="https://www.khronos.org/legal/trademarks/" color="textPrimary" underline='always' fontSize={"12px"} p={1} target="_blank" rel="noopener" sx={{color:fontColor}} aria-label='Link to Khronos trademarks'>Trademarks</Link>
           </Box>
         </Box>
-        <Box display='flex' pl={{xs:2, sm:3}} pr={{xs:2, sm:3}} style={{width: "100%", maxWidth: "1900px", margin: 'auto', justifyContent: 'space-between', flexWrap: 'wrap', background:bgColor}}>
+        <Box display='flex' pl={{xs:2, sm:3}} pr={{xs:2, sm:3}} style={{width: "100%", maxWidth: "1280px", margin: 'auto', justifyContent: 'space-between', flexWrap: 'wrap', background:bgColor}}>
           <Box pt={1} pb={1}>
             <Typography color={fontColor} pb={1} fontSize={"12px"}>
               Copyright {currentYear} - The Khronos® Group Inc.  All rights reserved.
