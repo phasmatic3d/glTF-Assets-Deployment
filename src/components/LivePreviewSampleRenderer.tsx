@@ -57,6 +57,7 @@ const handleMouseDown = (ev: React.MouseEvent<HTMLCanvasElement>) => {
     orbit.curr_mouse[0] = ev.pageX;
     orbit.curr_mouse[1] = ev.pageY;
   }
+  ev.preventDefault();
 }
 
 const handleMouseMove = (ev: React.MouseEvent<HTMLCanvasElement>) => {
@@ -83,6 +84,7 @@ const handleMouseMove = (ev: React.MouseEvent<HTMLCanvasElement>) => {
     orbit.prev_mouse[0] = ev.pageX;
     orbit.prev_mouse[1] = ev.pageY; 
   }
+  ev.preventDefault();
 }
 
 const handleMouseUp = (ev: React.MouseEvent<HTMLCanvasElement>) => {
@@ -95,6 +97,7 @@ const handleMouseUp = (ev: React.MouseEvent<HTMLCanvasElement>) => {
     orbit.deltaX = 0;
     orbit.deltaY = 0;
   }  
+  ev.preventDefault(); 
 }
 const handleMouseWheel = (ev: WheelEvent) => {
   orbit.deltaZoom = normalizeWheel(ev).spinY;//ev.deltaY;
@@ -383,6 +386,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       state.userCamera.resetView(state.gltf, state.sceneIndex);
       state.userCamera.fitViewToScene(state.gltf, state.sceneIndex);
       state.userCamera.orbitSpeed = Math.max(10.0 / canvas.width, 10.0 / canvas.height);
+      state.userCamera.panSpeed *= 5;
 
       state.renderingParameters.debugOutput = debugOutput;
       setIsModelLoaded(true);
@@ -448,23 +452,23 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       const toolResize = () => {
         if (canvasContainer.clientWidth == 0 || canvasContainer.clientHeight == 0) return;
                    
-          // Calculate new dimensions 
-          const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
-          const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
+        // Calculate new dimensions 
+        const width = document.fullscreenElement !== null? window.innerWidth : canvasContainer.clientWidth;
+        const height = document.fullscreenElement !== null? window.innerHeight : canvasContainer.clientHeight;
 
-          // TODO: Debug
-          console.log(`Resize  ${width} and ${height}`);
+        // TODO: Debug
+        console.log(`Resize  ${width} and ${height}`);
 
-          if(document.fullscreenElement == null)
-          {
-            //canvasContainerWrapper.style.width = `${width}px`;
-            canvasContainerWrapper.style.height = `${height}px`;
-          }
-    
-          canvas.width = width;
-          canvas.height = height;
-          //canvas.style.width = `${width}px`;
-          //canvas.style.height = `${height}px`;
+        if(document.fullscreenElement == null)
+        {
+          //canvasContainerWrapper.style.width = `${width}px`;
+          canvasContainerWrapper.style.height = `${height}px`;
+        }
+  
+        canvas.width = width;
+        canvas.height = height;
+        //canvas.style.width = `${width}px`;
+        //canvas.style.height = `${height}px`;
       };
 
       const resizeObserver = new ResizeObserver(() => {
