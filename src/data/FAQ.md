@@ -17,4 +17,4 @@
 
 **Q: How do I provide feedback on The Sample Assets Website?**
 
-**A:** Please open an issue on [Github](https://github.com/KhronosGroup/glTF-Sample-Assets) for this repository. <br><br>
+**A:** Please open an issue on [Github](https://github.com/KhronosGroup/glTF-Assets/issues) for this repository. <br><br>
