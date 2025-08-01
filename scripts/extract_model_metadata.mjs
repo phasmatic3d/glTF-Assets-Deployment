@@ -100,8 +100,7 @@ await (async () => {
       console.log(e);
       continue;
     }
-    //const metadata = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/metadata.json`, 'utf-8'));
-    //const gltf = JSON.parse(await fs.promises.readFile(`./glTF-Sample-Assets/${folderpath}/glTF/${name}.gltf`, 'utf-8'));
+    
     const gltf_file = model && model.variants && model.variants['glTF'];
     const glb = model && model.variants && model.variants['glTF-Binary'];
     const glb_draco = model && model.variants && Object.keys(model.variants).find(variant => variant.includes('Draco'));
@@ -221,6 +220,8 @@ await (async () => {
         OutputModelMap[name].keywords = ModelKeywords[name].keywords;
       }
       OutputModelMap[name].isOnRenderFidelity = name in RenderFidelityMap;
+
+      OutputModelMap[name].keywords += (gltf && gltf.animations && gltf.animations.length > 0)? ", Animated" : "";
     }   
   }
 })();

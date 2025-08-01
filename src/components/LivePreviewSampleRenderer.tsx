@@ -179,7 +179,7 @@ const supported_extensions = new Map([
 const debugOptions = ['None', "Base Color", "Metallic", "Roughness", 'Occlusion', 'Shading Normal', 'Wireframe'];
 
 let active_debugOutput = "None";
-let active_animations = [] as number[];
+let active_animations = [0] as number[];
 const active_extensions = new Map<string, boolean>(supported_extensions);
 let active_variant = "glTF-Binary";
 let change_variant = false;
