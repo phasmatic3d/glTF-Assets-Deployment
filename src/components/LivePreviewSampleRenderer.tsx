@@ -525,24 +525,24 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         <Script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js" strategy="afterInteractive" onLoad={() => { console.log("LOADED Draco"); setDracoLoaded(true);}} onReady={() => { console.log("READY Draco");}} />
         <Script src={`${basePath}/libs/libktx.js`} strategy="afterInteractive" onLoad={() => { console.log("LOADED KTX"); setKTXLoaded(true); }} onReady={() => { console.log("READY KTX");}}/>
         <Box ref={canvasContainerWrapperRef} sx={{textAlign: "center", margin: "auto", position: 'relative', minHeight: '50vh'}}>
-          <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{touchAction: 'none', overscrollBehavior: 'contain', width: '100%'}}/>
-          <img ref={imgRef} src={imgSrc} style={{display: 'none', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10, objectFit: 'contain', width:"inherit", height:'inherit'}} alt="Asset Preview"/>
-          {!isModelLoaded && <Box sx={{position: 'absolute', left: 0, top: 'calc(50% - 0.5 * 5rem)', width: '100%'}}>
+          <canvas ref={canvasRef} onMouseDown={handleMouseDown} onMouseMove={handleMouseMove} onMouseUp={handleMouseUp} style={{display: isModelLoaded? 'block' : 'none', touchAction: 'none', overscrollBehavior: 'contain', width: '100%'}}/>
+          <img ref={imgRef} src={imgSrc} style={{display: isModelLoaded? 'none' : 'block', backgroundColor: 'transparent', position: 'absolute', left: 0, top: 0, zIndex: 10, objectFit: 'cover', width:"100%", height:'100%'}} alt="Asset Preview"/>
+          {!isModelLoaded && <Box sx={{position: 'absolute', left: 0, top: 'calc(50% - 0.5 * 5rem)', width: '100%', zIndex: 20}}>
             <CircularProgress color="primary" size={'5rem'}/>
           </Box>}
 
           {/* Button in bottom left */}
-          <Box position="absolute" bottom={{sm: 20, xs: 10}} left={{sm: 20, xs: 10}} zIndex={10}>
+          {isModelLoaded && <Box position="absolute" bottom={{sm: 20, xs: 10}} left={{sm: 20, xs: 10}} zIndex={10}>
             <IconButton aria-label="Show/Hide Asset Inspector" color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: '#212121', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <MenuIcon />
             </IconButton>
-          </Box>
+          </Box>}
           {/* Button in bottom right */}
-          <Box position="absolute" bottom={{sm: 20, xs: 10}} right={{sm: 20, xs: 10}} zIndex={10}>
+          {isModelLoaded && <Box position="absolute" bottom={{sm: 20, xs: 10}} right={{sm: 20, xs: 10}} zIndex={10}>
             <IconButton aria-label="Fullscreen Button" color="default" onClick={() => requestFullScreen()} sx={{ backgroundColor: "#212121", color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <FullscreenIcon />
             </IconButton>
-          </Box>
+          </Box>}
           {/* Floating options window */}
           {showOptions && (
             <Paper
