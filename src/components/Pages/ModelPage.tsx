@@ -89,7 +89,7 @@ export default function ComparePage({name, label, image, tags, description, mode
           }
           </Box>
         {/* Actions */}
-        <Box display='flex' flexDirection={{xs:'column', sm:'row'}} width='100%' justifyContent='flex-start' mt={2}>
+        <Box display='flex' flexDirection={{xs:'column', md:'row'}} width='100%' justifyContent='flex-start' mt={2}>
           {downloadUrl && <Box mr={3}>
             <Link href={downloadUrl} color="#0366d6" underline='hover' rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Download GLB<FileDownloadIcon fontSize='small' sx={{ml: 0.5}}/></Link>
           </Box>}
