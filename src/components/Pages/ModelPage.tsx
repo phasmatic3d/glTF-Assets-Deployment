@@ -19,7 +19,7 @@ type ExternalLinkProps = {
   alt?: string
 }
 function ExternalLink( {url, alt, children} : React.PropsWithChildren<ExternalLinkProps>) {
-  return (<Link href={url} color="inherit" underline='hover' target="_blank" rel="noopener" aria-label={alt} sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>{children} <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>)
+  return (<Link href={url} color="#0366d6" underline='hover' target="_blank" rel="noopener" aria-label={alt} sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>{children} <LaunchIcon fontSize='small' sx={{ml:0.5}}/></Link>)
 }
 
 type ModelPageProps = {
@@ -49,10 +49,10 @@ export default function ComparePage({name, label, image, tags, description, mode
   const image1 = `${basePath}${image}`;
 
   const onShare = () => {
-    const shareURL = `${basePath}/compare/${name}`;
+    const shareURL = `${basePath}/model/${name}`;
     if (navigator.share) {
       navigator.share({
-        title: `Khronos Render Fidelity`,
+        title: `Khronos Sample Assets`,
         url: shareURL
       }).then(() => {
         console.log('Thanks for sharing!');
@@ -91,10 +91,10 @@ export default function ComparePage({name, label, image, tags, description, mode
         {/* Actions */}
         <Box display='flex' flexDirection={{xs:'column', sm:'row'}} width='100%' justifyContent='flex-start' mt={2}>
           {downloadUrl && <Box mr={3}>
-            <Link href={downloadUrl} color="inherit" underline='hover' rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Download GLB<FileDownloadIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+            <Link href={downloadUrl} color="#0366d6" underline='hover' rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}}>Download GLB<FileDownloadIcon fontSize='small' sx={{ml: 0.5}}/></Link>
           </Box>}
           <Box mr={3}>
-            <Link onClick={onShare} href="#" color="inherit" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}} aria-label='Share this link'>Share <ShareIcon fontSize='small' sx={{color: 'grey.100', ml: 0.5}}/></Link>
+            <Link onClick={onShare} href="#" color="#0366d6" underline='hover' target="_blank" rel="noopener" sx={{fontWeight:'bold', display:'flex', alignItems:'center'}} aria-label='Share this link'>Share <ShareIcon fontSize='small' sx={{ml: 0.5}}/></Link>
           </Box>
           {downloadUrl && <Box mr={3}>
             <ExternalLink url={`https://github.khronos.org/glTF-Sample-Viewer-Release/?model=${downloadUrl}`}>View on Sample Viewer</ExternalLink>

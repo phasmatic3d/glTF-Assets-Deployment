@@ -9,6 +9,7 @@
     border: 1px solid #ddd; /* Optional: Adds a border */
   }
   a {
+    color: #0366d6;
     font-weight: bold;
     text-decoration: underline;
   }
