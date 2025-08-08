@@ -39,5 +39,8 @@ This SampleAssets website contains high quality examples of glTF content. In par
 <br>
 <br>
 
-© 2025 The Khronos Group Inc. All Rights Reserved. glTF is a trademark of The Khronos Group Inc. See [Appendix](https://github.com/KhronosGroup/glTF/blob/main/extensions/2.0/Khronos/KHR_materials_iridescence/README.md#appendix-full-khronos-copyright-statement) for full Khronos Copyright Statement.
+
+This website was designed and developed by [Phasmatic](https://phasmatic.com). 
+
+<img src="/logos/phasmatic/phasmatic_logo_vertical.svg" alt="Phasmatic Logo" style="height: 75px;">
 
