@@ -66,9 +66,9 @@ export default function ComparePage({name, label, image, tags, description, mode
   }
 
   return (
-    <Box display="flex" sx={{width: '100%'}} flexDirection={{sm: 'row', xs:'column'}}>
+    <Box display="flex" sx={{width: '100%'}} flexDirection={{md: 'row', xs:'column'}}>
       {/* Main Content */}
-      <Box flex={4} p={{sm: 2, xs: 0}}>
+      <Box flex={4} p={{md: 2, xs: 0}}>
         <LivePreviewSampleRenderer src={modelURL} imgSrc={image1} variants={model.variants} statsCallback={setMeshStats}/>
         <Typography variant='h5' component="h1" sx={{paddingTop: 2}}>{label}</Typography>
         <Typography variant='body1' component='span' sx={{ml:1, fontWeight:'bold'}}>by: </Typography>{model.authors.join(", ")}
@@ -78,11 +78,11 @@ export default function ComparePage({name, label, image, tags, description, mode
             return <Chip key={e} label={e} sx={{
               ml : {
                 xs: 1,
-                sm: i==0? 0 : 1,
+                md: i==0? 0 : 1,
               },
               mb: {
                 xs: 1,
-                sm: 0
+                md: 0
               }, 
               bgcolor: theme.palette.grey[100], color: theme.palette.getContrastText(theme.palette.grey[100])
             }} />})
@@ -108,7 +108,7 @@ export default function ComparePage({name, label, image, tags, description, mode
         </Box>
         <Divider />
         {/* Quck Info */}
-        <Box display='flex' flexDirection={{xs:'column', sm:'row'}} mt={2}>
+        <Box display='flex' flexDirection={{xs:'column', md:'row'}} mt={2}>
           <Box mr={2}>
             <Typography component="span">{"Triangles:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableNumber(meshStats.numberOfFaces)}</Typography>
           </Box>
@@ -135,7 +135,7 @@ export default function ComparePage({name, label, image, tags, description, mode
 
       </Box>
       {/* Right Content - Suggested */}
-      <Box sx={{flex: 1}} mt={{sm: 0, xs: 2}}>
+      <Box sx={{flex: 1}} mt={{md: 0, xs: 2}}>
         <Grid className={styles.side} sx={{overflow: "auto", width:'100%'}} height={"80vh"} container spacing={2}>
           <Box display="flex" mt={1} sx={{width: '100%'}}><Typography variant='h6' component='h2'>{"Related Assets"}</Typography></Box>
           {showcaseModels.map((e,i) => { return <ModelRenderCard key={e.name+""+i} name={e.name} label={e.label} thumbnail={e.thumbnail} />})}
