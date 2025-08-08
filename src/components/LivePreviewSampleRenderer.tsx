@@ -570,11 +570,12 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'flex-start', // ← This is key
+                maxHeight: '50vh'
               }}
               
             >
               <Typography variant="h6">Inspection</Typography>
-              <Box display={extensions.size>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' width='100%' overflow='hidden'>
+              <Box display={extensions.size>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' width='100%' sx={{overflowWrap:"anywhere", overflowY:'scroll', overflowX:'hidden'}} >
                 <Typography variant="subtitle2" gutterBottom>
                   Extensions
                 </Typography>
@@ -588,6 +589,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                       />
                     }
                     label={extName.replace("KHR_materials_", "")}
+                    sx={{
+                      '.MuiFormControlLabel-label': {
+                        textAlign: 'left',
+                      },
+                    }}
                   />
                 ))}
               </Box>

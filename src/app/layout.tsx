@@ -48,7 +48,7 @@ export default function RootLayout({
             <CssBaseline />            
             <Box sx={{ display: 'flex', flexDirection: 'column', minHeight: "100vh"}}>
               <Header />
-              <Container sx={{flexGrow: 1, overflow: "auto", flex: 1 }} maxWidth={false}>
+              <Container sx={{flexGrow: 1, overflow: "visible", flex: 1 }} maxWidth={false}>
                 {children}
                 <BugReportButton />
               </Container>
