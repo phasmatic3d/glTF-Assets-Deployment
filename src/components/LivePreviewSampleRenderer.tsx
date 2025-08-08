@@ -17,7 +17,8 @@ export type Stats = {
   totalImagesFileSize: number
   numberOfVertices: number
   numberOfFaces: number,
-  totalFileSize: number
+  totalFileSize: number,
+  fileFormat?: string
 }
 
 export type LivePreviewSampleRendererProps = {
@@ -303,7 +304,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         setExtensions(extension_names);
       }
       
-      const customGatherStatistics = async (state: InstanceType<typeof GltfState>, view: InstanceType<typeof GltfView>, assetSource: string) : Promise<Stats> => {
+      const customGatherStatistics = async (state: InstanceType<typeof GltfState>, view: InstanceType<typeof GltfView>, assetSource: string, fileVariant: string) : Promise<Stats> => {
 
         const viewerStats = view.gatherStatistics(state);
 
@@ -315,7 +316,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
               totalImagesFileSize: 0,
               numberOfVertices: 0,
               numberOfFaces: 0,
-              totalFileSize: 0
+              totalFileSize: 0,
             };
         }
 
@@ -382,10 +383,11 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           totalImagesFileSize: imagesFileSize,
           numberOfVertices: numberOfVertices,
           numberOfFaces: (viewerStats as {faceCount: number}).faceCount,
-          totalFileSize: totalFileSize
+          totalFileSize: totalFileSize,
+          fileFormat: fileVariant
         }
       };
-      customGatherStatistics(state, view, src).then(res => { statsCallback(res); });
+      customGatherStatistics(state, view, src, active_variant).then(res => { statsCallback(res); });
       
       await resourceLoader.loadEnvironment(`https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Environments/low_resolution_hdrs/Cannon_Exterior.hdr`, {
          lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
@@ -412,7 +414,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         {
           resourceLoader.loadGltf(variants[active_variant])
             .then(res => { console.log("Reload gltf"); state.gltf = res;})
-            .then(_ => {return customGatherStatistics(state, view, variants[active_variant])})
+            .then(_ => {return customGatherStatistics(state, view, variants[active_variant], active_variant)})
             .then(res => { statsCallback(res); setIsModelLoaded(true);});          
           change_variant = false;
         }

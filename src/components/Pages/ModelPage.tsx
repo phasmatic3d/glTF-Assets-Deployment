@@ -121,6 +121,9 @@ export default function ComparePage({name, label, image, tags, description, mode
           {meshStats.totalImagesFileSize > 0 && <Box mr={2}>
             <Typography component="span">{"Images Size:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{toReadableBytes(meshStats.totalImagesFileSize)}</Typography>
           </Box>}
+          {meshStats.fileFormat && <Box mr={2}>
+            <Typography component="span">{"File Format:"}</Typography> <Typography component="span" sx={{fontWeight:'bold'}}>{meshStats.fileFormat}</Typography>
+          </Box>}
           
         </Box>
         {/* Description */}
