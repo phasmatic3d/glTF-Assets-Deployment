@@ -42,5 +42,5 @@ This SampleAssets website contains high quality examples of glTF content. In par
 
 This website was designed and developed by [Phasmatic](https://phasmatic.com). 
 
-<img src="/logos/phasmatic/phasmatic_logo_vertical.svg" alt="Phasmatic Logo" style="height: 75px;">
+<img src="https://github.khronos.org/glTF-Assets/logos/phasmatic/phasmatic_logo_vertical.svg" alt="Phasmatic Logo" style="height: 75px;">
 
