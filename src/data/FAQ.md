@@ -14,7 +14,7 @@
 
 **Q: Can I upload my own 3D models?**
 
-**A:** This version only supports 3D models from the glTF Sample Assets Repository. <br><br>
+**A:** This version only supports 3D models from the glTF Sample Assets Repository.  <br><br>
 
 **Q: How do I provide feedback on The Sample Assets Website?**
 
