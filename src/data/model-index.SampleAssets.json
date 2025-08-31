@@ -56,8 +56,7 @@
     ],
     "variants": {
       "glTF": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf",
-      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
-      "glTF-Embedded": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Embedded/AlphaBlendModeTest.gltf"
+      "glTF-Binary": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb"
     },
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF-Binary/AlphaBlendModeTest.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/AlphaBlendModeTest/glTF/AlphaBlendModeTest.gltf",
@@ -1008,7 +1007,7 @@
   },
   "CarConcept": {
     "name": "CarConcept",
-    "label": "CarConcept",
+    "label": "Car Concept",
     "description": "Concept car with Khronos logos and material variants",
     "tags": [
       "Showcase",
@@ -1174,7 +1173,7 @@
   },
   "ChronographWatch": {
     "name": "ChronographWatch",
-    "label": "ChronographWatch",
+    "label": "Chronograph Watch",
     "description": "Wrist watch with Khronos logos and material variants",
     "tags": [
       "Showcase",
@@ -1336,7 +1335,7 @@
   },
   "CommercialRefrigerator": {
     "name": "CommercialRefrigerator",
-    "label": "CommercialRefrigerator",
+    "label": "Commercial Refrigerator",
     "description": "Commercial refrigerator with glass condensation, champagne bottles, and door animation.",
     "tags": [
       "Showcase",
@@ -2101,7 +2100,7 @@
   },
   "DiffuseTransmissionPlant": {
     "name": "DiffuseTransmissionPlant",
-    "label": "DiffuseTransmissionPlant",
+    "label": "Diffuse Transmission Plant",
     "description": "Potted plant asset using Diffuse Transmission extension.",
     "tags": [
       "Showcase",
@@ -2148,7 +2147,7 @@
   },
   "DiffuseTransmissionTeacup": {
     "name": "DiffuseTransmissionTeacup",
-    "label": "DiffuseTransmissionTeacup",
+    "label": "Diffuse Transmission Teacup",
     "description": "DiffuseTransmissionTeacup model using Diffuse Transmission extension.",
     "tags": [
       "Showcase",
@@ -2189,7 +2188,6 @@
     "label": "DiffuseTransmissionTest",
     "description": "Test model for KHR_materials_diffuse_transmission extension.",
     "tags": [
-      "Showcase",
       "Extension",
       "Diffuse Transmission",
       "Unlit",
@@ -2312,7 +2310,6 @@
     "label": "Dragon Attenuation",
     "description": "Dragon with background, using material variants, transmission, and volume.",
     "tags": [
-      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -2355,7 +2352,6 @@
     "label": "Dragon Dispersion",
     "description": "Dragon with background, using dispersion, transmission, and volume.",
     "tags": [
-      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -2782,7 +2778,6 @@
     "label": "IORTestGrid",
     "description": "Grid of spheres over a checkered backdrop to test IOR rendering.",
     "tags": [
-      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
@@ -3762,9 +3757,9 @@
     ],
     "isOnRenderFidelity": false
   },
-  "PotOfCoalsAnimationPointer": {
-    "name": "PotOfCoalsAnimationPointer",
-    "label": "PotOfCoalsAnimationPointer",
+  "PotofCoalsAnimationPointer": {
+    "name": "PotofCoalsAnimationPointer",
+    "label": "Pot of Coals Animation Pointer",
     "description": "Burnt copper pot with a clearcoat, containing emissive hot coals, and animated heat refraction.",
     "tags": [
       "Showcase",
@@ -3791,8 +3786,8 @@
     ],
     "downloadModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoalsAnimationPointer/glTF-Binary/PotOfCoalsAnimationPointer.glb",
     "gltfModel": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/refs/heads/main/Models/PotOfCoalsAnimationPointer/glTF/PotOfCoalsAnimationPointer.gltf",
-    "image": "/images/PotOfCoalsAnimationPointer.webp",
-    "thumbnail": "/images/PotOfCoalsAnimationPointer.webp",
+    "image": "/images/PotofCoalsAnimationPointer.webp",
+    "thumbnail": "/images/PotofCoalsAnimationPointer.webp",
     "camera": {
       "yaw": 0,
       "pitch": 0,
@@ -4039,7 +4034,7 @@
   },
   "SheenChair": {
     "name": "SheenChair",
-    "label": "SheenChair",
+    "label": "Sheen Chair",
     "description": "Chair using material variants and sheen.",
     "tags": [
       "Showcase",
@@ -4122,7 +4117,6 @@
     "label": "SheenTestGrid",
     "description": "Grid of spheres over a checkered backdrop to test Sheen rendering.",
     "tags": [
-      "Showcase",
       "Extension",
       "Sheen"
     ],
@@ -4157,7 +4151,7 @@
   },
   "SheenWoodLeatherSofa": {
     "name": "SheenWoodLeatherSofa",
-    "label": "SheenWoodLeatherSofa",
+    "label": "Sheen Wood Leather Sofa",
     "description": "Sofa asset using sheen, specular, and high-quality tiling textures.",
     "tags": [
       "Showcase",
@@ -4484,7 +4478,7 @@
   },
   "SpecularSilkPouf": {
     "name": "SpecularSilkPouf",
-    "label": "SpecularSilkPouf",
+    "label": "Specular Silk Pouf",
     "description": "Wayfair SpecularSilkPouf model using sheen and specular extensions.",
     "tags": [
       "Showcase",
@@ -4587,7 +4581,7 @@
   },
   "StainedGlassLamp": {
     "name": "StainedGlassLamp",
-    "label": "StainedGlassLamp",
+    "label": "Stained Glass Lamp",
     "description": " ",
     "tags": [
       "Showcase",
@@ -4634,7 +4628,7 @@
   },
   "SunglassesKhronos": {
     "name": "SunglassesKhronos",
-    "label": "SunglassesKhronos",
+    "label": "Sunglasses Khronos",
     "description": "Sunglasses with Khronos logos and iridescent lenses",
     "tags": [
       "Showcase",
@@ -5109,7 +5103,6 @@
     "label": "TransmissionThinwallTestGrid",
     "description": "Grid of spheres over a checkered backdrop to test Thinfilm and IOR rendering.",
     "tags": [
-      "Showcase",
       "Extension",
       "Transmission",
       "Volume",
