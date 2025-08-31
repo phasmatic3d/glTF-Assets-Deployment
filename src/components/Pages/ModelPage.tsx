@@ -35,7 +35,7 @@ type ModelPageProps = {
   suggestedModels: Array<ModelType>
 }
 
-export default function ComparePage({name, label, image, tags, description, modelURL, downloadUrl, model, showcaseModels, suggestedModels}: ModelPageProps) {  
+export default function ModelPage({name, label, image, tags, description, modelURL, downloadUrl, model, showcaseModels, suggestedModels}: ModelPageProps) {  
   const theme = useTheme();
   const [shareSnackbarOpen, setShareSnackbarOpen] = React.useState(false);
 

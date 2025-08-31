@@ -256,8 +256,12 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
   };
 
   React.useEffect(() => {
-      active_debugOutput = debugOutput;
+    active_debugOutput = debugOutput;
   }, [debugOutput])
+
+  React.useEffect(() => {
+    active_variant = modelVariants;
+  }, [modelVariants]);
 
   React.useEffect(() => {
     
