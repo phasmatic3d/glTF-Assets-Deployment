@@ -1,7 +1,5 @@
 import fs from 'fs';
 import path from 'path';
-import { Worker } from 'worker_threads';
-//import ModelList from "../../src/data/model-index.Khronos.json" with { type: "json" };
 
 async function* getFiles(dir) {
   const dirents = await fs.promises.readdir(dir, { withFileTypes: true });

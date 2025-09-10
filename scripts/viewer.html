@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <title>GLTF Viewer</title>
-  <style>html, body, canvas { margin: 0; height: 100%; width: 100%; }</style>
+  <style>html, body, canvas { margin: 0; height: 100%; width: 100%; overflow: hidden;}</style>
   <script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder_gltf.js"></script>
   <script src="./libs/libktx.js"></script>
   <script type="module" src="./libs/mikktspace.js"></script>
 </head>
 <body>
-  <canvas id="canvas" width="1920px" height="1080px"></canvas>
+  <canvas id="canvas" width="1920" height="1080"></canvas>
   <script type="module">
     import { GltfView, GltfState } from './dist/gltf-viewer.module.js'
     //window.renderStarted = true;    

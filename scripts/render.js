@@ -35,6 +35,9 @@ const ModelMap = require('./../src/data/model-index.SampleAssets.json'); // Adju
     //if(model_name !== 'DispersionTest')
     //  continue;
 
+    if(fs.existsSync(path.join(imagesDir, `${model_name}.webp`)))
+      continue;
+
     const model = ModelMap[model_name].gltfModel;
     console.log("Processing", model_name, model);
     const yaw = ModelMap[model_name].camera.yaw;
