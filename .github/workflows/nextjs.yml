@@ -80,6 +80,8 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Generate metadata
         run: ${{ steps.detect-package-manager.outputs.manager }} run metadata
+      - name: Check metadata
+        run: git status
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
