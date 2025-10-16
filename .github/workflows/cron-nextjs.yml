@@ -7,7 +7,7 @@ name: Periodic deployment for Sample Asset updates
 on:
   schedule:
     # Runs every hour (adjust as needed)
-    - cron: '* * * * *'
+    - cron: "*/5 * * * *"
   workflow_dispatch:  # allows manual triggering too
 
 
