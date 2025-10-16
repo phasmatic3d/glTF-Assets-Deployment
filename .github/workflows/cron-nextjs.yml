@@ -5,10 +5,10 @@
 name: Periodic deployment for Sample Asset updates
 
 on:
+  workflow_dispatch:  # allows manual triggering too
   schedule:
     # Runs every hour (adjust as needed)
     - cron: "*/5 * * * *"
-  workflow_dispatch:  # allows manual triggering too
 
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
