@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -15,30 +15,30 @@
   "dependencies": {
     "@emotion/cache": "^11.14.0",
     "@emotion/react": "^11.14.0",
-    "@emotion/styled": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@khronosgroup/gltf-viewer": "./glTF-Sample-Renderer",
-    "@mui/icons-material": "^6.4.12",
-    "@mui/material": "^6.4.12",
-    "@mui/material-nextjs": "^6.4.12",
+    "@mui/icons-material": "^9.4.0",
+    "@mui/material": "^9.4.0",
+    "@mui/material-nextjs": "^9.4.0",
     "@types/normalize-wheel": "^1.0.4",
-    "fuse.js": "^7.1.0",
-    "image-js": "^0.37.0",
-    "next": "15.3.4",
+    "fuse.js": "^7.5.0",
+    "image-js": "^1.7.1",
+    "next": "^16.3.8",
     "normalize-wheel": "^1.0.1",
-    "puppeteer": "^24.26.0",
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0",
-    "sharp": "^0.34.2"
+    "puppeteer": "^25.12.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "sharp": "^0.35.5"
   },
   "devDependencies": {
-    "@eslint/eslintrc": "^3",
-    "@types/node": "^24",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@eslint/eslintrc": "^3.3.7",
+    "@types/node": "^26.6.4",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
     "@types/showdown": "^2.0.6",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.4",
+    "eslint": "^10.12.0",
+    "eslint-config-next": "^16.3.8",
     "showdown": "^2.1.0",
-    "typescript": "^5"
+    "typescript": "^7.0.2"
   }
 }
