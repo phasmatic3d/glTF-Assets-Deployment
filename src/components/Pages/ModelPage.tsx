@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { Chip, Typography, Box, Grid2 as Grid, Divider, Snackbar, Link } from "@mui/material";
+import { Chip, Typography, Box, Grid, Divider, Snackbar, Link } from "@mui/material";
 import ModelRenderCard from "@/components/ModelRenderCard"
 import { useTheme } from '@mui/material/styles';
 import styles from "./ModelPage.module.css";
