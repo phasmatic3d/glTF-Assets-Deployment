@@ -548,13 +548,13 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           </Box>}
 
           {/* Button in bottom left */}
-          {isModelLoaded && <Box position="absolute" bottom={{sm: 20, xs: 10}} left={{sm: 20, xs: 10}} zIndex={10}>
+          {isModelLoaded && <Box sx={{position: "absolute", bottom: {sm: 20, xs: 10}, left: {sm: 20, xs: 10}, zIndex: 10}}>
             <IconButton aria-label="Show/Hide Asset Inspector" color="default" onClick={() => setShowOptions(!showOptions)} sx={{ backgroundColor: '#212121', color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <MenuIcon />
             </IconButton>
           </Box>}
           {/* Button in bottom right */}
-          {isModelLoaded && <Box position="absolute" bottom={{sm: 20, xs: 10}} right={{sm: 20, xs: 10}} zIndex={10}>
+          {isModelLoaded && <Box sx={{position: "absolute", bottom: {sm: 20, xs: 10}, right: {sm: 20, xs: 10}, zIndex: 10}}>
             <IconButton aria-label="Fullscreen Button" color="default" onClick={() => requestFullScreen()} sx={{ backgroundColor: "#212121", color: 'white', '&:hover': { backgroundColor: 'gray', }, width: 32, height: 32, borderRadius: '50%', }}>
               <FullscreenIcon />
             </IconButton>
@@ -579,7 +579,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
               
             >
               <Typography variant="h6">Inspection</Typography>
-              <Box display={extensions.size>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' width='100%' sx={{overflowWrap:"anywhere", overflowY:'scroll', overflowX:'hidden'}} >
+              <Box sx={{display: extensions.size>0? 'flex':'none', flexDirection: 'column', alignItems: 'flex-start', width: '100%', overflowWrap:"anywhere", overflowY:'scroll', overflowX:'hidden'}} >
                 <Typography variant="subtitle2" gutterBottom>
                   Extensions
                 </Typography>
@@ -602,7 +602,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                 ))}
               </Box>
 
-              <Box display={animations.length>0? 'flex':'none'} flexDirection='column' alignItems='flex-start' mb={1} mt={2} width='100%'>
+              <Box sx={{display: animations.length>0? 'flex':'none', flexDirection: 'column', alignItems: 'flex-start', mb: 1, mt: 2, width: '100%'}}>
                 <Typography variant="subtitle1" gutterBottom>
                   Animations:
                 </Typography>
@@ -622,7 +622,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                 </ToggleButtonGroup>
                 
               </Box>
-              <Box width='100%' mt={2}>
+              <Box sx={{width: '100%', mt: 2}}>
                 <FormControl fullWidth size="small">
                   <InputLabel id="debug-output-label">Debug Visualization</InputLabel>
                   <Select
@@ -642,7 +642,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
                   </Select>
                 </FormControl>
               </Box>
-              <Box width='100%' mt={2}>
+              <Box sx={{width: '100%', mt: 2}}>
                 <FormControl fullWidth size="small">
                   <InputLabel id="variants-label">Format Variants</InputLabel>
                   <Select
