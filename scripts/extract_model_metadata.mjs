@@ -111,6 +111,7 @@ await (async () => {
       const name = encodeURIComponent(metadata.name.replace(/\s+/g, ''));
       OutputModelMap[name] = {};
       OutputModelMap[name].name = metadata.name.replace(/\s+/g, '');
+      OutputModelMap[name].folder = dir.name;
       OutputModelMap[name].label = metadata.name;
       OutputModelMap[name].description = metadata.summary;
       OutputModelMap[name].tags = [];
