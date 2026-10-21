@@ -279,6 +279,20 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
       const {GltfView, GltfState} = await import('@khronosgroup/gltf-viewer/dist/gltf-viewer.module.js');
       const view = new GltfView(webGl2Context);
+
+      // Polygon mode is global GL state: draw the fullscreen tonemap quad filled even in wireframe mode.
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
+      const renderer = (view as any).renderer;
+      const origTonemapPass = renderer.tonemapPass.bind(renderer);
+      renderer.tonemapPass = (...args: unknown[]) => {
+        const ext = webgl2_wireframe_extensions;
+        if(ext)
+          ext.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, ext.FILL_WEBGL);
+        origTonemapPass(...args);
+        if(ext && active_debugOutput == 'Wireframe')
+          ext.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, ext.LINE_WEBGL);
+      };
+
       const state = view.createState();
       state.sceneIndex = 0;
       state.animationIndices = [0, 1, 2];
@@ -351,7 +365,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
         // Face and Triangle count. Copied code from gltf-sample-renderer
         let numberOfVertices = 0;
-        const nodes = scene.gatherNodes(state.gltf);
+        const { nodes } = scene.gatherNodes(state.gltf, state.renderingParameters.enabledExtensions);
         const uniqueAccessors = new Set<number>();
         for(const node of nodes)
         {
@@ -412,8 +426,10 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
 
       state.renderingParameters.debugOutput = debugOutput;
       setIsModelLoaded(true);
+      const defaultToneMap = state.renderingParameters.toneMap;
+      const defaultRenderEnvironmentMap = state.renderingParameters.renderEnvironmentMap;
       const update = () =>
-      { 
+      {
         if(change_variant)
         {
           resourceLoader.loadGltf(variants[active_variant])
@@ -428,12 +444,16 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
           if(webgl2_wireframe_extensions)
             webgl2_wireframe_extensions.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, webgl2_wireframe_extensions.LINE_WEBGL);
           state.renderingParameters.debugOutput = 'Base Color';
+          state.renderingParameters.toneMap = GltfState.ToneMaps.NONE;
+          state.renderingParameters.renderEnvironmentMap = false;
         }
         else
         {
           if(webgl2_wireframe_extensions)
             webgl2_wireframe_extensions.polygonModeWEBGL(webGl2Context.FRONT_AND_BACK, webgl2_wireframe_extensions.FILL_WEBGL);
           state.renderingParameters.debugOutput = active_debugOutput;
+          state.renderingParameters.toneMap = defaultToneMap;
+          state.renderingParameters.renderEnvironmentMap = defaultRenderEnvironmentMap;
         }
         state.animationIndices = active_animations;
         active_extensions.forEach((value, key) => {
