@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "eslint .",
     "metadata": "node scripts/extract_model_metadata.mjs",
     "generate": "node scripts/render.js",
     "preinstall": "cd ./glTF-Sample-Renderer && npm install && npm run build",
