@@ -411,7 +411,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
          lut_ggx_file: `${basePath}/assets/lut_ggx.png`, 
          lut_charlie_file: `${basePath}/assets/lut_charlie.png`,
          lut_sheen_E_file: `${basePath}/assets/lut_sheen_E.png`
-      }).then((environment) => {
+      }).then((environment: typeof state.environment) => {
         state.environment = environment;
       })
       //state.renderingParameters.iblIntensity = Math.pow(10, 0.1/*intensity*/);
