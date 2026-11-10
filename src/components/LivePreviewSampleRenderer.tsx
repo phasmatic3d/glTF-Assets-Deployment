@@ -433,9 +433,9 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
         if(change_variant)
         {
           resourceLoader.loadGltf(variants[active_variant])
-            .then(res => { console.log("Reload gltf"); state.gltf = res;})
-            .then(_ => {return customGatherStatistics(state, view, variants[active_variant], active_variant)})
-            .then(res => { statsCallback(res); setIsModelLoaded(true);});          
+            .then(res: typeof state.gltf => { console.log("Reload gltf"); state.gltf = res;})
+            .then(() => {return customGatherStatistics(state, view, variants[active_variant], active_variant)})
+            .then(res: Stats => { statsCallback(res); setIsModelLoaded(true);});          
           change_variant = false;
         }
         // Rendering Properties
