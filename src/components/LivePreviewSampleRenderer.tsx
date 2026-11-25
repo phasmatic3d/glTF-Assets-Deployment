@@ -273,7 +273,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
     
     if(!dracoLoaded)
       return;
-    
+
     if(canvasRef == null || canvasRef.current == null) { return; }
     const canvas = canvasRef.current;
     const webGl2Context = canvas.getContext('webgl2') as WebGL2RenderingContext;
@@ -496,7 +496,7 @@ export default function LivePreviewSampleRenderer({src, imgSrc, variants, statsC
       window.requestAnimationFrame(update);
     };
     load();
-  }, [src, ktxLoaded, dracoLoaded])
+  }, [src, dracoLoaded])
 
   React.useEffect(() => {
     if(canvasRef == null || canvasRef.current == null) { return; }
